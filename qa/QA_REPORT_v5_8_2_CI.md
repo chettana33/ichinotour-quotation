@@ -25,3 +25,8 @@
 - [x] Export Backup — passed 2026-07-19
 - [x] Import Backup — passed 2026-07-19
 - [x] Load หลัง Import — passed 2026-07-19
+- [x] Sort แก้ไขล่าสุด — passed 2026-07-19
+- [x] Sort สร้างล่าสุด — passed 2026-07-19
+- [x] Sort ลูกค้า A–Z — passed 2026-07-19
+- [x] Sort เลข Quotation — passed 2026-07-19
+- [x] Sort วันเดินทางใกล้สุด — passed 2026-07-19
