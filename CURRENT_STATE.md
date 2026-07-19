@@ -4,13 +4,13 @@
 
 ## Development ล่าสุด
 
-- เวอร์ชัน: v5.8.1 CI
+- เวอร์ชัน: v5.8.2 CI
 - สถานะ: Development / Static QA passed / Interactive QA pending
-- ไฟล์: `development/quotation_v5_8_1_CI.html`
-- SHA-256: `a9fb4190fd150aec4c549f5c4d8a4d1fd8d9c681114f16d7492c9661f059d286`
-- Base: v5.8 CI
-- Scope: ปุ่มลัดไปศูนย์จัดการใบเสนอราคา
-- QA Report: `qa/QA_REPORT_v5_8_1_CI.md`
+- ไฟล์: `development/quotation_v5_8_2_CI.html`
+- SHA-256: `8a8226962426d77674f4e64902a069dc532bbec674b8cfc60ac7f2dc0d7749a8`
+- Base: v5.8.1 CI
+- Scope: ปุ่มจากศูนย์จัดการใบเสนอราคากลับไปด้านบน
+- QA Report: `qa/QA_REPORT_v5_8_2_CI.md`
 
 ## ฐาน v5.8 ที่รักษาไว้
 
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-เผยแพร่ v5.8.1 ที่ `https://chettana33.github.io/ichinotour-quotation/` แล้ว ให้พี่เจยืนยันว่าปุ่มลัดด้านบนเลื่อนไปยังศูนย์จัดการใบเสนอราคาได้ จากนั้นทำ Regression QA เฉพาะส่วนที่ได้รับผลกระทบ
+เผยแพร่ v5.8.2 ที่ `https://chettana33.github.io/ichinotour-quotation/` แล้ว ให้พี่เจยืนยันว่าปุ่ม `↑ กลับด้านบน` เลื่อนจาก Record Manager กลับไปด้านบนได้
 
 ## ข้อห้าม ณ สถานะนี้
 
