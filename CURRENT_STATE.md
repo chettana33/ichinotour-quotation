@@ -4,13 +4,13 @@
 
 ## Development ล่าสุด
 
-- เวอร์ชัน: v5.8.3 CI
-- สถานะ: Development / Static QA passed / v5.8.3 Scope User QA passed
-- ไฟล์: `development/quotation_v5_8_3_CI.html`
-- SHA-256: `662bd65a7bb989efcf713b2d1aeaca70e9d596d4a4835d4013260de7839dc40c`
-- Base: v5.8.2 CI
-- Scope: รวมปุ่มลัดขึ้น/ลงไว้กับปุ่มล้างฟอร์ม และเพิ่ม fixture 25 records
-- QA Report: `qa/QA_REPORT_v5_8_3_CI.md`
+- เวอร์ชัน: v5.8.4 CI
+- สถานะ: Development / Static QA passed / Interactive QA pending
+- ไฟล์: `development/quotation_v5_8_4_CI.html`
+- SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
+- Base: v5.8.3 CI
+- Scope: เปิดหน้า/F5 แล้วเลือกเฉพาะ HOTEL และ BUS
+- QA Report: `qa/QA_REPORT_v5_8_4_CI.md`
 
 ## ฐาน v5.8 ที่รักษาไว้
 
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-Pagination 25 records และปุ่มลัดทั้งสองผ่าน User QA แล้ว v5.7 Migration ผ่านบางส่วน: พบครบ 3 รายการ สถานะ Draft และปี 2025 ถูกต้อง เหลือยืนยัน Load payload ครบและ Reload แล้วไม่เพิ่มซ้ำ
+v5.7 Migration ผ่าน User QA ครบแล้ว รวม Load payload และ Reload ไม่ซ้ำ เผยแพร่ v5.8.4 แล้ว รอพี่เจยืนยันว่าหลังเปิดหน้าและ F5 มีเพียง HOTEL และ BUS ที่ถูกเลือก
 
 ## ข้อห้าม ณ สถานะนี้
 
