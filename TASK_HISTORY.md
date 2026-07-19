@@ -1,12 +1,19 @@
 # TASK HISTORY
 
-## CURRENT — v5.8.4 CI RC1 Acceptance
+## CURRENT — Awaiting Next Scope
 
-- สถานะ: Release Candidate 1 / Awaiting user acceptance
+- สถานะ: v5.8.4 CI Approved Master
+- วันที่อนุมัติ: 2026-07-19
+- Approved file: `releases/approved/quotation_v5_8_4_CI_APPROVED.html`
+- Next: ยืนยัน Scope ใหม่ก่อนเริ่ม Development เวอร์ชันถัดไป
+
+## HIST-009 — v5.8.4 CI RC1 Acceptance
+
+- สถานะ: Completed / Promoted to Approved Master
 - วันที่สร้าง: 2026-07-19
 - Source: Development v5.8.4
 - ผล: Promotion แบบ byte-for-byte ไม่มี code change
-- Next: พี่เจตรวจรับและตัดสินใจ Approved Master
+- Result: พี่เจอนุมัติเป็น Approved Master เมื่อ 2026-07-19
 
 ## HIST-008 — v5.8.4 Default Categories
 
