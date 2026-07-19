@@ -2,10 +2,11 @@
 
 ## CURRENT — v5.8.4 Default Categories
 
-- สถานะ: Development
+- สถานะ: Development / Static QA passed / User Interactive QA passed
 - วันที่เริ่ม: 2026-07-19
 - Scope: เปิดหน้า/F5 แล้วเลือกเฉพาะ HOTEL และ BUS
 - Base: v5.8.3 CI โดยไม่แก้ทับไฟล์เดิม
+- ผล QA: เปิดหน้าและ F5 แล้วเลือกเฉพาะ HOTEL และ BUS ผ่าน User QA เมื่อ 2026-07-19
 
 ## HIST-007 — v5.8.3 Shortcut Placement + Pagination Fixture
 
