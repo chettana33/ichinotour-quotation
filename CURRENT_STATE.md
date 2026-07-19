@@ -5,7 +5,7 @@
 ## Development ล่าสุด
 
 - เวอร์ชัน: v5.8.3 CI
-- สถานะ: Development / Static QA passed / Shortcut User QA passed
+- สถานะ: Development / Static QA passed / v5.8.3 Scope User QA passed
 - ไฟล์: `development/quotation_v5_8_3_CI.html`
 - SHA-256: `662bd65a7bb989efcf713b2d1aeaca70e9d596d4a4835d4013260de7839dc40c`
 - Base: v5.8.2 CI
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-Pagination 25 records ผ่าน User QA แล้ว: หน้าแรก 20 รายการ หน้าที่สอง 5 รายการ และเปลี่ยนหน้าได้ งาน QA หลักที่เหลือคือ v5.7 Migration และการยืนยันตำแหน่ง/การทำงานของปุ่มลัดทั้งสองใน v5.8.3
+Pagination 25 records และตำแหน่ง/การทำงานของปุ่มลัดทั้งสองใน v5.8.3 ผ่าน User QA แล้ว งาน QA หลักที่เหลือเพียง v5.7 Migration
 
 ## ข้อห้าม ณ สถานะนี้
 
