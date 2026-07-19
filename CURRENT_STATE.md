@@ -5,7 +5,7 @@
 ## Development ล่าสุด
 
 - เวอร์ชัน: v5.8.4 CI
-- สถานะ: Development / Static QA passed / Interactive QA pending
+- สถานะ: Development / Static QA passed / User Interactive QA passed
 - ไฟล์: `development/quotation_v5_8_4_CI.html`
 - SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
 - Base: v5.8.3 CI
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-v5.7 Migration ผ่าน User QA ครบแล้ว รวม Load payload และ Reload ไม่ซ้ำ เผยแพร่ v5.8.4 แล้ว รอพี่เจยืนยันว่าหลังเปิดหน้าและ F5 มีเพียง HOTEL และ BUS ที่ถูกเลือก
+v5.8.4 ผ่าน Static QA และ User Interactive QA ของ Scope แล้ว ค่าเริ่มต้นหลังเปิดหน้า/F5 เลือกเฉพาะ HOTEL และ BUS ฟีเจอร์หลักของ v5.8, Pagination 25 records, Customer Database, Backup/Restore, Sort, Print/PDF, v5.7 Migration และปุ่มลัดผ่าน User QA แล้ว รอพี่เจตัดสินใจว่าจะเลื่อนเป็น Release Candidate หรือกำหนด Scope ใหม่
 
 ## ข้อห้าม ณ สถานะนี้
 
