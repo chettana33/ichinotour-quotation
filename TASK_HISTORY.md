@@ -2,11 +2,12 @@
 
 ## CURRENT — v5.8.3 Shortcut Placement + Pagination Fixture
 
-- สถานะ: Development
+- สถานะ: Development / Static QA passed / User Interactive QA passed
 - วันที่เริ่ม: 2026-07-19
 - Scope: รวมปุ่มลัดขึ้น/ลงไว้กับปุ่มล้างฟอร์ม และสร้างข้อมูลจำลอง 25 records
 - Base: v5.8.2 CI โดยไม่แก้ทับไฟล์เดิม
 - ผล QA: Import fixture และ Pagination 25 records ผ่าน User QA เมื่อ 2026-07-19
+- ผล QA: ปุ่มลัดทั้งสองอยู่ติดกับปุ่มล้างฟอร์มและใช้งานได้ ผ่าน User QA เมื่อ 2026-07-19
 
 ## HIST-006 — v5.8.2 Return-to-Top Shortcut
 
