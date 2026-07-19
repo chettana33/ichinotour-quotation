@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v5.8.4 CI — Approved Master
+
+- พี่เจอนุมัติ v5.8.4 CI RC1 เป็น Approved Master เมื่อ 2026-07-19
+- Approved Master ตรงกับ Development และ RC1 แบบ byte-for-byte
+- ไม่มี code change ระหว่าง promotion
+
 ## v5.8.4 CI RC1 — Release Candidate
 
 - Promote จาก Development v5.8.4 ที่ผ่าน Static และ User Interactive QA
