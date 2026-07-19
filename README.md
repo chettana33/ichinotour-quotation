@@ -14,3 +14,7 @@
 - Historical baseline: v5.5 CI (ยังไม่มีไฟล์ต้นฉบับในชุด repository ปัจจุบัน)
 
 ห้ามเก็บข้อมูลลูกค้าจริง, browser backup, password, token หรือ secret ใด ๆ ใน repository นี้
+
+## Reusable AI Continuity Template
+
+โครงหลักการทำงานร่วมกับ AI และระบบ GitHub checkpoint สำหรับนำไปใช้เริ่มโครงการอื่นอยู่ที่ `templates/ai-project-continuity/`
