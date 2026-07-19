@@ -33,6 +33,14 @@
 - [x] SHA-256: `8fdc0d6f20a6ec399a166ec60afae657e8ea2ff0261ac955e624cc89cae57916`
 - [ ] Migration User QA
 
+Migration partial result 2026-07-19:
+
+- [x] พบ `QA-V57-001` ถึง `QA-V57-003` ครบ
+- [x] สถานะ Draft ครบ
+- [x] ปี 2025 ถูกต้อง
+- [ ] Load payload ครบ
+- [ ] Reload แล้วไม่เพิ่มซ้ำ
+
 ## Interactive QA
 
 - [x] พี่เจยืนยันตำแหน่งและการทำงานของปุ่มทั้งสอง — 2026-07-19
