@@ -2,7 +2,17 @@
 
 อัปเดตล่าสุด: 2026-07-19 (Asia/Bangkok)
 
-## ฐานปัจจุบัน
+## Development ล่าสุด
+
+- เวอร์ชัน: v5.8.1 CI
+- สถานะ: Development / Static QA passed / Interactive QA pending
+- ไฟล์: `development/quotation_v5_8_1_CI.html`
+- SHA-256: `a9fb4190fd150aec4c549f5c4d8a4d1fd8d9c681114f16d7492c9661f059d286`
+- Base: v5.8 CI
+- Scope: ปุ่มลัดไปศูนย์จัดการใบเสนอราคา
+- QA Report: `qa/QA_REPORT_v5_8_1_CI.md`
+
+## ฐาน v5.8 ที่รักษาไว้
 
 - เวอร์ชัน: v5.8 CI
 - สถานะ: Development / Static QA passed
@@ -34,7 +44,7 @@
 
 ## Next Action
 
-Interactive QA ได้รับการยืนยัน Scopeแล้วเมื่อ 2026-07-19 และระบบถูกเผยแพร่ที่ `https://chettana33.github.io/ichinotour-quotation/` หน้าเริ่มต้นและฟอร์ม v5.8 โหลดผ่าน แต่ automation ค้างเมื่อปุ่ม Save เปิด JavaScript `alert()` จึงยังต้องทำ Save/Search/Filter/Backup/Migration/Print QA ใน Browser ผู้ใช้ตาม `qa/QA_EXECUTION_v5_8_CI_2026-07-19.md` ก่อนแก้โค้ดหรือกำหนดเวอร์ชันถัดไป
+เผยแพร่ v5.8.1 ที่ `https://chettana33.github.io/ichinotour-quotation/` แล้ว ให้พี่เจยืนยันว่าปุ่มลัดด้านบนเลื่อนไปยังศูนย์จัดการใบเสนอราคาได้ จากนั้นทำ Regression QA เฉพาะส่วนที่ได้รับผลกระทบ
 
 ## ข้อห้าม ณ สถานะนี้
 
