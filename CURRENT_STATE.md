@@ -5,7 +5,7 @@
 ## Development ล่าสุด
 
 - เวอร์ชัน: v5.8.2 CI
-- สถานะ: Development / Static QA passed / Interactive QA pending
+- สถานะ: Development / Static QA passed / Shortcut User QA passed
 - ไฟล์: `development/quotation_v5_8_2_CI.html`
 - SHA-256: `8a8226962426d77674f4e64902a069dc532bbec674b8cfc60ac7f2dc0d7749a8`
 - Base: v5.8.1 CI
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-เผยแพร่ v5.8.2 ที่ `https://chettana33.github.io/ichinotour-quotation/` แล้ว ให้พี่เจยืนยันว่าปุ่ม `↑ กลับด้านบน` เลื่อนจาก Record Manager กลับไปด้านบนได้
+ฟีเจอร์ปุ่มลัดขึ้น/ลงของ v5.8.2 ผ่าน User QA แล้ว งาน QA หลักที่ยังค้างจาก v5.8 ได้แก่การยืนยัน 25 records, Sort ทุกแบบ, Customer Database, Backup/Restore และ v5.7 Migration
 
 ## ข้อห้าม ณ สถานะนี้
 
