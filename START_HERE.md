@@ -13,15 +13,16 @@
 1. `START_HERE.md`
 2. `MASTER_CONTEXT.md`
 3. `CURRENT_STATE.md`
-4. `PROJECT_RULES.md`
-5. `VERSION_CONTROL_RULES.md`
-6. `DATA_RULES.md`
-7. `UI_DESIGN_RULES.md`
-8. `TESTING_CHECKLIST.md`
-9. `ROADMAP.md`
-10. `DECISION_LOG.md`
-11. `TASK_HISTORY.md`
-12. QA Report และไฟล์โค้ดที่ `CURRENT_STATE.md` ระบุ
+4. `checkpoints/CHECKPOINT_LATEST.md`
+5. `PROJECT_RULES.md`
+6. `VERSION_CONTROL_RULES.md`
+7. `DATA_RULES.md`
+8. `UI_DESIGN_RULES.md`
+9. `TESTING_CHECKLIST.md`
+10. `ROADMAP.md`
+11. `DECISION_LOG.md`
+12. `TASK_HISTORY.md`
+13. QA Report และไฟล์โค้ดที่ `CURRENT_STATE.md` ระบุ
 
 ## ขั้นตอนเริ่มงานบังคับ
 
