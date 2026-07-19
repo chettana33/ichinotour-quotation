@@ -2,6 +2,17 @@
 
 อัปเดตล่าสุด: 2026-07-19 (Asia/Bangkok)
 
+## Release Candidate ล่าสุด
+
+- เวอร์ชัน: v5.8.4 CI RC1
+- สถานะ: Release Candidate 1 / Awaiting user acceptance
+- ไฟล์: `releases/candidates/quotation_v5_8_4_CI_RC1.html`
+- SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
+- Source: `development/quotation_v5_8_4_CI.html`
+- Release Notes: `releases/candidates/RELEASE_NOTES_v5_8_4_CI_RC1.md`
+- QA Report: `qa/QA_REPORT_v5_8_4_CI_RC1.md`
+- Source และ RC1 ตรงกันแบบ byte-for-byte
+
 ## Development ล่าสุด
 
 - เวอร์ชัน: v5.8.4 CI
@@ -44,7 +55,7 @@
 
 ## Next Action
 
-v5.8.4 ผ่าน Static QA และ User Interactive QA ของ Scope แล้ว ค่าเริ่มต้นหลังเปิดหน้า/F5 เลือกเฉพาะ HOTEL และ BUS ฟีเจอร์หลักของ v5.8, Pagination 25 records, Customer Database, Backup/Restore, Sort, Print/PDF, v5.7 Migration และปุ่มลัดผ่าน User QA แล้ว รอพี่เจตัดสินใจว่าจะเลื่อนเป็น Release Candidate หรือกำหนด Scope ใหม่
+สร้าง v5.8.4 CI RC1 จาก Development ที่ผ่าน QA แล้วโดยไม่มี code change รอพี่เจตรวจรับและยืนยันว่าจะเลื่อนเป็น Approved Master หรือไม่
 
 ## ข้อห้าม ณ สถานะนี้
 
