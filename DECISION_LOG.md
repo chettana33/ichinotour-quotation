@@ -41,3 +41,10 @@
 - ทุกการอัปเดตหรือผลงานใหม่ที่สำเร็จต้องบันทึก checkpoint ลง GitHub ก่อนจบรอบ
 - ใช้ `CURRENT_STATE.md` เป็นจุดรับช่วงล่าสุด
 - Master Context เก็บเฉพาะกฎและบริบทถาวร ส่วนรายละเอียดรอบงานอยู่ใน Task History, Changelog และ QA Report
+
+## 2026-07-19 — อนุมัติ v5.8.4 CI เป็น Approved Master
+
+- พี่เจยืนยัน `อนุมัติ v5.8.4 CI RC1 เป็น Approved Master`
+- Development, RC1 และ Approved file ตรงกันแบบ byte-for-byte
+- Approved Master นี้เป็น baseline ของงาน Development ถัดไป
+- ห้ามแก้ทับ Approved file
