@@ -31,15 +31,15 @@
 - [x] ไม่มีคำสั่งลบข้อมูล v5.8
 - [x] หยุดทำงานเมื่อพบ `quotationV58_CI_records`
 - [x] SHA-256: `8fdc0d6f20a6ec399a166ec60afae657e8ea2ff0261ac955e624cc89cae57916`
-- [ ] Migration User QA
+- [x] Migration User QA — passed 2026-07-19
 
 Migration partial result 2026-07-19:
 
 - [x] พบ `QA-V57-001` ถึง `QA-V57-003` ครบ
 - [x] สถานะ Draft ครบ
 - [x] ปี 2025 ถูกต้อง
-- [ ] Load payload ครบ
-- [ ] Reload แล้วไม่เพิ่มซ้ำ
+- [x] Load payload ครบ — User QA passed
+- [x] Reload แล้วไม่เพิ่มซ้ำ — User QA passed
 
 ## Interactive QA
 
