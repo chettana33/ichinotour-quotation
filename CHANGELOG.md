@@ -4,6 +4,7 @@
 
 - ย้ายปุ่มลัดลงไป Record Manager และกลับด้านบนมาไว้ในแถบเดียวกับปุ่มล้างฟอร์ม
 - เพิ่ม QA fixture ข้อมูลจำลอง 25 records สำหรับทดสอบ Pagination
+- เพิ่มหน้า Seeder ที่ปลอดภัยสำหรับทดสอบ migration จาก v5.7 ใน Incognito
 - ไม่มีการเปลี่ยน logic การบันทึกหรือจัดการข้อมูล
 
 ## v5.8.2 CI — Development
