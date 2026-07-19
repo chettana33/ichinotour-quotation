@@ -24,8 +24,8 @@
 
 ## Phase 4 — Release Candidate
 
-- สถานะ: Not started
-- เริ่มได้เมื่อ QA ที่กำหนดผ่านและพี่เจอนุมัติให้เลื่อนสถานะ
+- สถานะ: v5.8.4 CI RC1 created / Awaiting user acceptance
+- QA ที่กำหนดผ่านและพี่เจอนุมัติให้สร้าง RC1 แล้ว
 
 ## Phase 5 — Approved Release
 
