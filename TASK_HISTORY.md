@@ -7,6 +7,7 @@
 - Scope: เพิ่มปุ่มจากด้านล่างกลับไปด้านบนของ panel
 - Base: v5.8.1 CI โดยไม่แก้ทับไฟล์เดิม
 - ผล: พี่เจยืนยันว่าปุ่ม `↑ กลับด้านบน` ใช้งานได้เมื่อ 2026-07-19
+- Regression QA: Customer Database, Export Backup, Import Backup และ Load หลัง Import ผ่าน User QA เมื่อ 2026-07-19
 
 ## HIST-005 — v5.8.1 Record Manager Shortcut
 
