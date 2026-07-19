@@ -6,6 +6,7 @@
 - วันที่อนุมัติ: 2026-07-19
 - Approved file: `releases/approved/quotation_v5_8_4_CI_APPROVED.html`
 - Next: ยืนยัน Scope ใหม่ก่อนเริ่ม Development เวอร์ชันถัดไป
+- Governance asset: เพิ่ม reusable AI Project Continuity System สำหรับใช้เป็นต้นแบบใน repository ใหม่
 
 ## HIST-009 — v5.8.4 CI RC1 Acceptance
 
