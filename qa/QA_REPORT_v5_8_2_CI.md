@@ -18,3 +18,10 @@
 ## Interactive QA
 
 - [x] พี่เจยืนยันว่าปุ่มกลับด้านบนทำงาน — 2026-07-19
+
+## Inherited Regression QA — User Result
+
+- [x] Customer Database — passed 2026-07-19
+- [x] Export Backup — passed 2026-07-19
+- [x] Import Backup — passed 2026-07-19
+- [x] Load หลัง Import — passed 2026-07-19
