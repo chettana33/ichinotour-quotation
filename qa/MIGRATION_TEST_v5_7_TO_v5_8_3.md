@@ -28,5 +28,5 @@
 - [x] พบครบ 3 รายการ — User QA passed 2026-07-19
 - [x] สถานะ Draft ครบ — User QA passed 2026-07-19
 - [x] ปี 2025 ถูกต้อง — User QA passed 2026-07-19
-- [ ] Load ข้อมูลครบ
-- [ ] Reload แล้วไม่ซ้ำ
+- [x] Load ข้อมูลครบ — User QA passed 2026-07-19
+- [x] Reload แล้วไม่ซ้ำ — User QA passed 2026-07-19
