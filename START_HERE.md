@@ -31,6 +31,7 @@
 4. ทำเฉพาะ Scope ที่ได้รับอนุมัติ
 5. ทดสอบตาม `TESTING_CHECKLIST.md`
 6. อัปเดต `CURRENT_STATE.md`, `TASK_HISTORY.md`, `CHANGELOG.md` และ QA Report เมื่อจบรอบ
+7. Commit checkpoint ทั้งหมดขึ้น GitHub ก่อนรายงานว่างานสำเร็จ
 
 ## กฎหยุดงาน
 
