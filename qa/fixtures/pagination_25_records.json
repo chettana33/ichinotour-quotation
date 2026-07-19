@@ -1,0 +1,3220 @@
+{
+  "app": "Ichino Tour Quotation",
+  "version": "5.8",
+  "fixture": "pagination-25",
+  "exportedAt": "2026-07-19T02:00:00.000Z",
+  "records": [
+    {
+      "id": "QA-PAGINATION-RECORD-001",
+      "meta": {
+        "quoteNo": "QA-PAGE-001",
+        "customer": "QA Pagination Customer 1",
+        "tripName": "QA Pagination Trip A",
+        "status": "Draft",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-02",
+        "createdAt": "2026-07-19T01:00:00.000Z",
+        "updatedAt": "2026-07-19T01:00:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:00:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-001",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip A",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 10100,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-002",
+      "meta": {
+        "quoteNo": "QA-PAGE-002",
+        "customer": "QA Pagination Customer 2",
+        "tripName": "QA Pagination Trip B",
+        "status": "Sent",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-03",
+        "createdAt": "2026-07-19T01:01:00.000Z",
+        "updatedAt": "2026-07-19T01:01:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:01:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-002",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip B",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 10200,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-003",
+      "meta": {
+        "quoteNo": "QA-PAGE-003",
+        "customer": "QA Pagination Customer 3",
+        "tripName": "QA Pagination Trip C",
+        "status": "Confirmed",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-04",
+        "createdAt": "2026-07-19T01:02:00.000Z",
+        "updatedAt": "2026-07-19T01:02:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:02:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-003",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip C",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 10300,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-004",
+      "meta": {
+        "quoteNo": "QA-PAGE-004",
+        "customer": "QA Pagination Customer 4",
+        "tripName": "QA Pagination Trip D",
+        "status": "Cancelled",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-05",
+        "createdAt": "2026-07-19T01:03:00.000Z",
+        "updatedAt": "2026-07-19T01:03:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:03:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-004",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip D",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 10400,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-005",
+      "meta": {
+        "quoteNo": "QA-PAGE-005",
+        "customer": "QA Pagination Customer 5",
+        "tripName": "QA Pagination Trip E",
+        "status": "Draft",
+        "favorite": true,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-06",
+        "createdAt": "2026-07-19T01:04:00.000Z",
+        "updatedAt": "2026-07-19T01:04:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:04:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-005",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip E",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": true,
+          "isFavorite": true
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 10500,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-006",
+      "meta": {
+        "quoteNo": "QA-PAGE-006",
+        "customer": "QA Pagination Customer 1",
+        "tripName": "QA Pagination Trip A",
+        "status": "Sent",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-07",
+        "createdAt": "2026-07-19T01:05:00.000Z",
+        "updatedAt": "2026-07-19T01:05:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:05:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-006",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip A",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 10600,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-07",
+                "end": "2026-08-07",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-007",
+      "meta": {
+        "quoteNo": "QA-PAGE-007",
+        "customer": "QA Pagination Customer 2",
+        "tripName": "QA Pagination Trip B",
+        "status": "Confirmed",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-08",
+        "createdAt": "2026-07-19T01:06:00.000Z",
+        "updatedAt": "2026-07-19T01:06:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:06:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-007",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip B",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 10700,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-08",
+                "end": "2026-08-08",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-008",
+      "meta": {
+        "quoteNo": "QA-PAGE-008",
+        "customer": "QA Pagination Customer 3",
+        "tripName": "QA Pagination Trip C",
+        "status": "Cancelled",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-09",
+        "createdAt": "2026-07-19T01:07:00.000Z",
+        "updatedAt": "2026-07-19T01:07:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:07:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-008",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip C",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 10800,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-09",
+                "end": "2026-08-09",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-009",
+      "meta": {
+        "quoteNo": "QA-PAGE-009",
+        "customer": "QA Pagination Customer 4",
+        "tripName": "QA Pagination Trip D",
+        "status": "Draft",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-10",
+        "createdAt": "2026-07-19T01:08:00.000Z",
+        "updatedAt": "2026-07-19T01:08:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:08:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-009",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip D",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 10900,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-10",
+                "end": "2026-08-10",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-010",
+      "meta": {
+        "quoteNo": "QA-PAGE-010",
+        "customer": "QA Pagination Customer 5",
+        "tripName": "QA Pagination Trip E",
+        "status": "Sent",
+        "favorite": true,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-11",
+        "createdAt": "2026-07-19T01:09:00.000Z",
+        "updatedAt": "2026-07-19T01:09:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:09:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-010",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip E",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": true,
+          "isFavorite": true
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 11000,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-11",
+                "end": "2026-08-11",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-011",
+      "meta": {
+        "quoteNo": "QA-PAGE-011",
+        "customer": "QA Pagination Customer 1",
+        "tripName": "QA Pagination Trip A",
+        "status": "Confirmed",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-12",
+        "createdAt": "2026-07-19T01:10:00.000Z",
+        "updatedAt": "2026-07-19T01:10:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:10:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-011",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip A",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 11100,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-12",
+                "end": "2026-08-12",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-012",
+      "meta": {
+        "quoteNo": "QA-PAGE-012",
+        "customer": "QA Pagination Customer 2",
+        "tripName": "QA Pagination Trip B",
+        "status": "Cancelled",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-13",
+        "createdAt": "2026-07-19T01:11:00.000Z",
+        "updatedAt": "2026-07-19T01:11:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:11:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-012",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip B",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 11200,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-13",
+                "end": "2026-08-13",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-013",
+      "meta": {
+        "quoteNo": "QA-PAGE-013",
+        "customer": "QA Pagination Customer 3",
+        "tripName": "QA Pagination Trip C",
+        "status": "Draft",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-14",
+        "createdAt": "2026-07-19T01:12:00.000Z",
+        "updatedAt": "2026-07-19T01:12:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:12:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-013",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip C",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 11300,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-14",
+                "end": "2026-08-14",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-014",
+      "meta": {
+        "quoteNo": "QA-PAGE-014",
+        "customer": "QA Pagination Customer 4",
+        "tripName": "QA Pagination Trip D",
+        "status": "Sent",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-15",
+        "createdAt": "2026-07-19T01:13:00.000Z",
+        "updatedAt": "2026-07-19T01:13:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:13:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-014",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip D",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 11400,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-15",
+                "end": "2026-08-15",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-015",
+      "meta": {
+        "quoteNo": "QA-PAGE-015",
+        "customer": "QA Pagination Customer 5",
+        "tripName": "QA Pagination Trip E",
+        "status": "Confirmed",
+        "favorite": true,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-16",
+        "createdAt": "2026-07-19T01:14:00.000Z",
+        "updatedAt": "2026-07-19T01:14:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:14:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-015",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip E",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": true,
+          "isFavorite": true
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 11500,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-16",
+                "end": "2026-08-16",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-016",
+      "meta": {
+        "quoteNo": "QA-PAGE-016",
+        "customer": "QA Pagination Customer 1",
+        "tripName": "QA Pagination Trip A",
+        "status": "Cancelled",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-17",
+        "createdAt": "2026-07-19T01:15:00.000Z",
+        "updatedAt": "2026-07-19T01:15:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:15:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-016",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip A",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 11600,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-17",
+                "end": "2026-08-17",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-017",
+      "meta": {
+        "quoteNo": "QA-PAGE-017",
+        "customer": "QA Pagination Customer 2",
+        "tripName": "QA Pagination Trip B",
+        "status": "Draft",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-18",
+        "createdAt": "2026-07-19T01:16:00.000Z",
+        "updatedAt": "2026-07-19T01:16:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:16:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-017",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip B",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 11700,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-18",
+                "end": "2026-08-18",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-018",
+      "meta": {
+        "quoteNo": "QA-PAGE-018",
+        "customer": "QA Pagination Customer 3",
+        "tripName": "QA Pagination Trip C",
+        "status": "Sent",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-19",
+        "createdAt": "2026-07-19T01:17:00.000Z",
+        "updatedAt": "2026-07-19T01:17:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:17:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-018",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip C",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 11800,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-19",
+                "end": "2026-08-19",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-019",
+      "meta": {
+        "quoteNo": "QA-PAGE-019",
+        "customer": "QA Pagination Customer 4",
+        "tripName": "QA Pagination Trip D",
+        "status": "Confirmed",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-20",
+        "createdAt": "2026-07-19T01:18:00.000Z",
+        "updatedAt": "2026-07-19T01:18:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:18:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-019",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip D",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 11900,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-20",
+                "end": "2026-08-20",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-020",
+      "meta": {
+        "quoteNo": "QA-PAGE-020",
+        "customer": "QA Pagination Customer 5",
+        "tripName": "QA Pagination Trip E",
+        "status": "Cancelled",
+        "favorite": true,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-01",
+        "createdAt": "2026-07-19T01:19:00.000Z",
+        "updatedAt": "2026-07-19T01:19:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:19:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-020",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip E",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": true,
+          "isFavorite": true
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 12000,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-01",
+                "end": "2026-08-01",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-021",
+      "meta": {
+        "quoteNo": "QA-PAGE-021",
+        "customer": "QA Pagination Customer 1",
+        "tripName": "QA Pagination Trip A",
+        "status": "Draft",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-02",
+        "createdAt": "2026-07-19T01:20:00.000Z",
+        "updatedAt": "2026-07-19T01:20:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:20:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-021",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip A",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 12100,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-02",
+                "end": "2026-08-02",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-022",
+      "meta": {
+        "quoteNo": "QA-PAGE-022",
+        "customer": "QA Pagination Customer 2",
+        "tripName": "QA Pagination Trip B",
+        "status": "Sent",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-03",
+        "createdAt": "2026-07-19T01:21:00.000Z",
+        "updatedAt": "2026-07-19T01:21:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:21:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-022",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip B",
+          "quoteStatus": "Sent",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 12200,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-03",
+                "end": "2026-08-03",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-023",
+      "meta": {
+        "quoteNo": "QA-PAGE-023",
+        "customer": "QA Pagination Customer 3",
+        "tripName": "QA Pagination Trip C",
+        "status": "Confirmed",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-04",
+        "createdAt": "2026-07-19T01:22:00.000Z",
+        "updatedAt": "2026-07-19T01:22:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:22:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-023",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip C",
+          "quoteStatus": "Confirmed",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 12300,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-04",
+                "end": "2026-08-04",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-024",
+      "meta": {
+        "quoteNo": "QA-PAGE-024",
+        "customer": "QA Pagination Customer 4",
+        "tripName": "QA Pagination Trip D",
+        "status": "Cancelled",
+        "favorite": false,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-05",
+        "createdAt": "2026-07-19T01:23:00.000Z",
+        "updatedAt": "2026-07-19T01:23:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:23:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-024",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip D",
+          "quoteStatus": "Cancelled",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": false,
+          "isFavorite": false
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 12400,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-05",
+                "end": "2026-08-05",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    },
+    {
+      "id": "QA-PAGINATION-RECORD-025",
+      "meta": {
+        "quoteNo": "QA-PAGE-025",
+        "customer": "QA Pagination Customer 5",
+        "tripName": "QA Pagination Trip E",
+        "status": "Draft",
+        "favorite": true,
+        "quoteYear": "2026",
+        "tripStart": "2026-08-06",
+        "createdAt": "2026-07-19T01:24:00.000Z",
+        "updatedAt": "2026-07-19T01:24:00.000Z"
+      },
+      "payload": {
+        "version": "V5.8-CI-record-manager",
+        "savedAt": "2026-07-19T01:24:00.000Z",
+        "fields": {
+          "quoteNo": "QA-PAGE-025",
+          "quoteDate": "2026-07-19",
+          "validUntil": "2026-08-02",
+          "currency": "JPY / Yen → THB",
+          "exchangeRate": "0.21",
+          "tripName": "QA Pagination Trip E",
+          "quoteStatus": "Draft",
+          "sellerInfo": "ICHINO TOUR (Thailand)\nQA TEST DATA",
+          "customerInfo": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+          "remarks": "QA Pagination fixture — ข้อมูลจำลองเท่านั้น",
+          "fontFamily": "Arial",
+          "fontSize": "14",
+          "textColor": "#1d2733",
+          "primaryColor": "#0f3a5f",
+          "accentColor": "#d4af37",
+          "busOptions": "Hiace (Full Day)\nHiace (Transfer)"
+        },
+        "flags": {
+          "favorite": true,
+          "isFavorite": true
+        },
+        "data": {
+          "hotel": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "HOTEL item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 12500,
+                "note": ""
+              }
+            ]
+          },
+          "bus": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "Hiace (Full Day)",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": "all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv."
+              }
+            ]
+          },
+          "restaurant": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "RESTAURANT item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "guide": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "GUIDE / TOUR LEADER item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "ticket": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "TICKET / ENTRANCE item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          },
+          "other": {
+            "enabled": true,
+            "items": [
+              {
+                "description": "OTHER item",
+                "start": "2026-08-06",
+                "end": "2026-08-06",
+                "qty": 1,
+                "unit": 1,
+                "price": 0,
+                "note": ""
+              }
+            ]
+          }
+        },
+        "logo": ""
+      }
+    }
+  ],
+  "customers": [
+    {
+      "id": "QA-PAGE-CUSTOMER-1",
+      "name": "QA Pagination Customer 1",
+      "info": "QA Pagination Customer 1\nContact: QA Test\nEmail: qa-pagination-1@example.test\nTel: 000-000-0001",
+      "createdAt": "2026-07-19T00:00:00.000Z",
+      "updatedAt": "2026-07-19T00:00:00.000Z"
+    },
+    {
+      "id": "QA-PAGE-CUSTOMER-2",
+      "name": "QA Pagination Customer 2",
+      "info": "QA Pagination Customer 2\nContact: QA Test\nEmail: qa-pagination-2@example.test\nTel: 000-000-0002",
+      "createdAt": "2026-07-19T00:01:00.000Z",
+      "updatedAt": "2026-07-19T00:01:00.000Z"
+    },
+    {
+      "id": "QA-PAGE-CUSTOMER-3",
+      "name": "QA Pagination Customer 3",
+      "info": "QA Pagination Customer 3\nContact: QA Test\nEmail: qa-pagination-3@example.test\nTel: 000-000-0003",
+      "createdAt": "2026-07-19T00:02:00.000Z",
+      "updatedAt": "2026-07-19T00:02:00.000Z"
+    },
+    {
+      "id": "QA-PAGE-CUSTOMER-4",
+      "name": "QA Pagination Customer 4",
+      "info": "QA Pagination Customer 4\nContact: QA Test\nEmail: qa-pagination-4@example.test\nTel: 000-000-0004",
+      "createdAt": "2026-07-19T00:03:00.000Z",
+      "updatedAt": "2026-07-19T00:03:00.000Z"
+    },
+    {
+      "id": "QA-PAGE-CUSTOMER-5",
+      "name": "QA Pagination Customer 5",
+      "info": "QA Pagination Customer 5\nContact: QA Test\nEmail: qa-pagination-5@example.test\nTel: 000-000-0005",
+      "createdAt": "2026-07-19T00:04:00.000Z",
+      "updatedAt": "2026-07-19T00:04:00.000Z"
+    }
+  ]
+}
