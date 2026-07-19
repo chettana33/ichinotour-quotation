@@ -24,6 +24,15 @@
 - [x] Quote Numbers ไม่ซ้ำ 25 ค่า
 - [x] Import ซ้ำใช้ id เดิม จึงไม่เพิ่มชุดซ้ำ
 
+## v5.7 Migration Seeder — Static QA
+
+- [x] JavaScript syntax ผ่าน
+- [x] สร้างข้อมูลจำลอง 3 records ใน `quotationV57_CI_records`
+- [x] ไม่มีคำสั่งลบข้อมูล v5.8
+- [x] หยุดทำงานเมื่อพบ `quotationV58_CI_records`
+- [x] SHA-256: `8fdc0d6f20a6ec399a166ec60afae657e8ea2ff0261ac955e624cc89cae57916`
+- [ ] Migration User QA
+
 ## Interactive QA
 
 - [x] พี่เจยืนยันตำแหน่งและการทำงานของปุ่มทั้งสอง — 2026-07-19
