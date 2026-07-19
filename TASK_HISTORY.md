@@ -22,5 +22,8 @@
 
 ## CURRENT — v5.8 Interactive QA
 
-- สถานะ: Awaiting Scope confirmation
+- สถานะ: Scope confirmed / Blocked by worker test environment
+- วันที่เริ่ม: 2026-07-19
 - งาน: `CURRENT_STATE.md` และ `TESTING_CHECKLIST.md` หมวด D–E
+- ผลรอบแรก: Browser ทดสอบไม่สามารถเปิด localhost และไม่อนุญาตให้รันไฟล์ HTML จาก GitHub โดยตรง จึงไม่เปลี่ยนรายการ Pending เป็น Passed
+- หลักฐานและขั้นตอนต่อ: `qa/QA_EXECUTION_v5_8_CI_2026-07-19.md`
