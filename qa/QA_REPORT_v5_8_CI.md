@@ -37,9 +37,11 @@ User QA report: 2026-07-19 — Save, Search, Filter, Pagination และ Print/
 
 User QA report: 2026-07-19 — Customer Database, Export Backup, Import Backup และ Load หลัง Import ผ่านทั้งหมด
 
+User QA report: 2026-07-19 — Sort ทั้ง 5 แบบผ่านทั้งหมด
+
 - [ ] บันทึกอย่างน้อย 25 รายการและเปลี่ยนหน้า (Pagination ผ่านจาก User QA; จำนวน 25 รายการยังไม่ได้ยืนยัน)
 - [x] ค้นหาและกรองหลายเงื่อนไข — User QA passed
-- [ ] เรียงข้อมูลทุกแบบ
+- [x] เรียงข้อมูลทุกแบบ — แก้ไขล่าสุด, สร้างล่าสุด, ลูกค้า A–Z, เลข Quotation และวันเดินทาง ผ่าน User QA
 - [x] บันทึกและเรียกใช้ข้อมูลลูกค้า — User QA passed
 - [x] Export แล้ว Import Backup และ Load หลัง Import — User QA passed
 - [ ] ตรวจข้อมูล v5.7 หลัง migration
