@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v5.8.4 CI — Development
+
+- เปลี่ยนค่าเริ่มต้นหลังเปิดหน้า/F5 ให้เลือกเฉพาะ HOTEL และ BUS
+- หมวด RESTAURANT, GUIDE / TOUR LEADER, TICKET / ENTRANCE และ OTHER รอผู้ใช้เลือกเอง
+- การ Load ใบเสนอราคาเดิมยังใช้สถานะหมวดที่บันทึกไว้
+
 ## v5.8.3 CI — Development
 
 - ย้ายปุ่มลัดลงไป Record Manager และกลับด้านบนมาไว้ในแถบเดียวกับปุ่มล้างฟอร์ม
