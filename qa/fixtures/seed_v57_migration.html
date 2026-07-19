@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ichinotour v5.7 Migration Test Seeder</title>
+  <style>
+    body{font-family:Arial,'Noto Sans Thai',Tahoma,sans-serif;background:#eef7ff;color:#1d2733;margin:0;padding:24px}
+    main{max-width:760px;margin:auto;background:#fff;border-top:7px solid #0798e8;border-radius:14px;padding:24px;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+    h1{color:#06358f;margin-top:0}h2{color:#087ec5}code{background:#eef5fb;padding:2px 6px;border-radius:5px}
+    .warning{border:1px solid #f0b429;background:#fff8e6;border-radius:10px;padding:12px}
+    .status{white-space:pre-line;border:1px solid #b8dcf5;background:#f8fcff;border-radius:10px;padding:12px;margin:16px 0}
+    button,a.button{display:inline-block;border:0;border-radius:9px;padding:11px 14px;font-weight:700;background:#06358f;color:#fff;text-decoration:none;cursor:pointer;margin:4px 4px 4px 0}
+    button:disabled{background:#8795a5;cursor:not-allowed}.hidden{display:none}
+  </style>
+</head>
+<body>
+<main>
+  <h1>v5.7 → v5.8.3 Migration Test</h1>
+  <div class="warning"><b>ใช้ใน Incognito หรือ Guest profile เท่านั้น</b><br>หน้านี้จะไม่ลบข้อมูล v5.8 เดิม หากพบข้อมูล v5.8 อยู่แล้ว ระบบจะหยุดทันที</div>
+
+  <h2>ข้อมูลจำลอง</h2>
+  <ul>
+    <li>ใบเสนอราคา 3 รายการ: <code>QA-V57-001</code> ถึง <code>QA-V57-003</code></li>
+    <li>ไม่มี status, favorite และ quoteYear เพื่อให้ v5.8 เติมค่าระหว่าง migration</li>
+    <li>คาดหวังสถานะหลังย้าย: Draft และปี 2025</li>
+  </ul>
+
+  <div class="status" id="status">กำลังตรวจพื้นที่จัดเก็บ…</div>
+  <button id="seedButton" type="button" onclick="seedLegacyData()">1. สร้างข้อมูล v5.7 จำลอง</button>
+  <a class="button hidden" id="openApp" href="../../?migration-test=v57">2. เปิด Quotation v5.8.3</a>
+</main>
+
+<script>
+const V57_KEY='quotationV57_CI_records';
+const V58_KEY='quotationV58_CI_records';
+
+function legacyData(index){
+  const n=String(index).padStart(3,'0');
+  const quoteNo=`QA-V57-${n}`;
+  const timestamp=`2025-12-${String(index).padStart(2,'0')}T10:00:00.000Z`;
+  const data={
+    hotel:{enabled:true,items:[{description:`QA v5.7 Hotel ${index}`,start:`2025-12-${String(index+10).padStart(2,'0')}`,end:`2025-12-${String(index+10).padStart(2,'0')}`,qty:1,unit:1,price:10000*index,note:''}]},
+    bus:{enabled:true,items:[{description:'Hiace (Full Day)',start:'',end:'',qty:1,unit:1,price:0,note:'all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv.'}]},
+    restaurant:{enabled:false,items:[]},guide:{enabled:false,items:[]},ticket:{enabled:false,items:[]},other:{enabled:false,items:[]}
+  };
+  return {
+    id:`QA-V57-RECORD-${n}`,
+    meta:{quoteNo,customer:`QA v5.7 Customer ${index}`,tripName:`QA v5.7 Trip ${index}`,tripStart:data.hotel.items[0].start,createdAt:timestamp,updatedAt:timestamp},
+    payload:{
+      version:'V5.7-CI-multi-record',savedAt:timestamp,
+      fields:{quoteNo,quoteDate:`2025-12-${String(index).padStart(2,'0')}`,validUntil:'2025-12-31',currency:'JPY / Yen → THB',exchangeRate:'0.21',tripName:`QA v5.7 Trip ${index}`,sellerInfo:'ICHINO TOUR (Thailand)\nQA MIGRATION TEST',customerInfo:`QA v5.7 Customer ${index}\nContact: QA Test`,remarks:'QA v5.7 migration fixture',fontFamily:'Arial',fontSize:'14',textColor:'#1d2733',primaryColor:'#0f3a5f',accentColor:'#d4af37',busOptions:'Hiace (Full Day)\nHiace (Transfer)'},
+      data,logo:''
+    }
+  };
+}
+
+function inspectStorage(){
+  const hasV58=localStorage.getItem(V58_KEY)!==null;
+  const hasV57=localStorage.getItem(V57_KEY)!==null;
+  const status=document.getElementById('status');
+  const button=document.getElementById('seedButton');
+  if(hasV58){
+    status.textContent='หยุดทดสอบ: Browser นี้มีข้อมูล v5.8 อยู่แล้ว\nกรุณาปิดหน้านี้และเปิดลิงก์ Seeder ใน Incognito/Guest profile ใหม่';
+    button.disabled=true;
+    return;
+  }
+  status.textContent=hasV57?'พบข้อมูล v5.7 จำลองแล้ว และยังไม่มีข้อมูล v5.8':'พร้อมทดสอบ: ยังไม่มีข้อมูล v5.7 และ v5.8';
+  if(hasV57)document.getElementById('openApp').classList.remove('hidden');
+}
+
+function seedLegacyData(){
+  if(localStorage.getItem(V58_KEY)!==null){inspectStorage();return;}
+  const rows=[1,2,3].map(legacyData);
+  localStorage.setItem(V57_KEY,JSON.stringify(rows));
+  document.getElementById('status').textContent='สร้างข้อมูล v5.7 จำลอง 3 รายการแล้ว\nขั้นต่อไปกด “2. เปิด Quotation v5.8.3”';
+  document.getElementById('openApp').classList.remove('hidden');
+}
+
+inspectStorage();
+</script>
+</body>
+</html>
