@@ -44,7 +44,7 @@
 
 ## Next Action
 
-ฟีเจอร์ปุ่มลัดขึ้น/ลง, Customer Database และ Backup/Restore ของ v5.8.2 ผ่าน User QA แล้ว งาน QA หลักที่ยังค้าง ได้แก่การยืนยัน 25 records, Sort ทุกแบบ และ v5.7 Migration
+ฟีเจอร์ปุ่มลัดขึ้น/ลง, Customer Database, Backup/Restore และ Sort ทั้ง 5 แบบของ v5.8.2 ผ่าน User QA แล้ว งาน QA หลักที่ยังค้าง ได้แก่การยืนยัน 25 records/Pagination และ v5.7 Migration
 
 ## ข้อห้าม ณ สถานะนี้
 
