@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v5.8.1 CI — Development
+
+- เพิ่มปุ่มลัดด้านบนเพื่อเลื่อนไปยังศูนย์จัดการใบเสนอราคา
+- ไม่มีการเปลี่ยน logic ของ Save, Search, Filter, Pagination หรือ Print/PDF
+
 ## v5.8 CI — Development
 
 - เพิ่ม Search, Filters, Sorting และ Pagination 20 รายการ
