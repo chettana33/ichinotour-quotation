@@ -56,6 +56,16 @@
 - ย้ายข้อมูล v5.7 เข้าสู่ v5.8 อัตโนมัติครั้งแรก
 - รักษาระบบหลายรายการและหมายเหตุหลายบรรทัดจากเวอร์ชันก่อน
 
+### v5.8.4 CI — Approved Master ปัจจุบัน
+
+- พัฒนาต่อจาก v5.8 โดยเพิ่มปุ่มลัดขึ้น/ลงและค่าเริ่มต้นเลือกเฉพาะ HOTEL/BUS
+- ผ่าน Static QA และ User Interactive QA ของฟังก์ชันหลัก
+- v5.7 Migration ผ่าน
+- พี่เจอนุมัติ v5.8.4 CI RC1 เป็น Approved Master เมื่อ 2026-07-19
+- Approved file: `releases/approved/quotation_v5_8_4_CI_APPROVED.html`
+- SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
+- ใช้เป็น baseline สำหรับ Development เวอร์ชันถัดไปและห้ามแก้ทับ
+
 ## 4. สถานะ QA ปัจจุบัน
 
 - Static QA ของ v5.8 ผ่าน
