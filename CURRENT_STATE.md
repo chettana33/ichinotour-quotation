@@ -2,10 +2,22 @@
 
 อัปเดตล่าสุด: 2026-07-19 (Asia/Bangkok)
 
+## Approved Master ปัจจุบัน
+
+- เวอร์ชัน: v5.8.4 CI
+- สถานะ: Approved Master
+- วันที่อนุมัติ: 2026-07-19
+- ผู้อนุมัติ: พี่เจ
+- ไฟล์: `releases/approved/quotation_v5_8_4_CI_APPROVED.html`
+- SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
+- Source RC: `releases/candidates/quotation_v5_8_4_CI_RC1.html`
+- Approval Record: `releases/approved/APPROVAL_RECORD_v5_8_4_CI.md`
+- Development, RC1 และ Approved Master ตรงกันแบบ byte-for-byte
+
 ## Release Candidate ล่าสุด
 
 - เวอร์ชัน: v5.8.4 CI RC1
-- สถานะ: Release Candidate 1 / Awaiting user acceptance
+- สถานะ: Release Candidate 1 / Promoted to Approved Master
 - ไฟล์: `releases/candidates/quotation_v5_8_4_CI_RC1.html`
 - SHA-256: `21e91403655b478545e4a5b353a2d1bcdd66ef22ca12e0e273874894d01b500a`
 - Source: `development/quotation_v5_8_4_CI.html`
@@ -55,7 +67,7 @@
 
 ## Next Action
 
-สร้าง v5.8.4 CI RC1 จาก Development ที่ผ่าน QA แล้วโดยไม่มี code change รอพี่เจตรวจรับและยืนยันว่าจะเลื่อนเป็น Approved Master หรือไม่
+v5.8.4 CI RC1 ได้รับอนุมัติเป็น Approved Master แล้ว ห้ามแก้ไฟล์ Approved โดยตรง งานถัดไปต้องกำหนด Scope และสร้าง Development version ใหม่จาก Approved Master นี้
 
 ## ข้อห้าม ณ สถานะนี้
 
