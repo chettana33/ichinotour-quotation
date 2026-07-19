@@ -67,7 +67,7 @@
 
 ## Next Action
 
-v5.8.4 CI RC1 ได้รับอนุมัติเป็น Approved Master แล้ว ห้ามแก้ไฟล์ Approved โดยตรง งานถัดไปต้องกำหนด Scope และสร้าง Development version ใหม่จาก Approved Master นี้
+v5.8.4 CI RC1 ได้รับอนุมัติเป็น Approved Master แล้ว ห้ามแก้ไฟล์ Approved โดยตรง เพิ่ม reusable AI continuity template ที่ `templates/ai-project-continuity/` โดยไม่เปลี่ยนตัวระบบ Quotation งานผลิตภัณฑ์ถัดไปต้องกำหนด Scope และสร้าง Development version ใหม่จาก Approved Master
 
 ## ข้อห้าม ณ สถานะนี้
 
