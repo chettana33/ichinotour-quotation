@@ -44,7 +44,7 @@
 
 ## Next Action
 
-Pagination 25 records และตำแหน่ง/การทำงานของปุ่มลัดทั้งสองใน v5.8.3 ผ่าน User QA แล้ว งาน QA หลักที่เหลือเพียง v5.7 Migration
+Pagination 25 records และตำแหน่ง/การทำงานของปุ่มลัดทั้งสองใน v5.8.3 ผ่าน User QA แล้ว เตรียม Seeder และขั้นตอนทดสอบ v5.7 Migration ที่ `qa/fixtures/seed_v57_migration.html` และ `qa/MIGRATION_TEST_v5_7_TO_v5_8_3.md` แล้ว รอ User QA
 
 ## ข้อห้าม ณ สถานะนี้
 
