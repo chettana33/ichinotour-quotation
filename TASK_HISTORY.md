@@ -1,8 +1,15 @@
 # TASK HISTORY
 
-## CURRENT — v5.8.1 Record Manager Shortcut
+## CURRENT — v5.8.2 Return-to-Top Shortcut
 
 - สถานะ: Development
+- วันที่เริ่ม: 2026-07-19
+- Scope: เพิ่มปุ่มจากด้านล่างกลับไปด้านบนของ panel
+- Base: v5.8.1 CI โดยไม่แก้ทับไฟล์เดิม
+
+## HIST-005 — v5.8.1 Record Manager Shortcut
+
+- สถานะ: Development / Static QA passed / User Interactive QA passed
 - วันที่เริ่ม: 2026-07-19
 - Scope: เพิ่มปุ่มลัดด้านบนให้เลื่อนไปศูนย์จัดการใบเสนอราคา
 - Base: v5.8 CI โดยไม่แก้ทับไฟล์เดิม
