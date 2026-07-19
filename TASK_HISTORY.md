@@ -1,6 +1,14 @@
 # TASK HISTORY
 
-## CURRENT — v5.8.4 Default Categories
+## CURRENT — v5.8.4 CI RC1 Acceptance
+
+- สถานะ: Release Candidate 1 / Awaiting user acceptance
+- วันที่สร้าง: 2026-07-19
+- Source: Development v5.8.4
+- ผล: Promotion แบบ byte-for-byte ไม่มี code change
+- Next: พี่เจตรวจรับและตัดสินใจ Approved Master
+
+## HIST-008 — v5.8.4 Default Categories
 
 - สถานะ: Development / Static QA passed / User Interactive QA passed
 - วันที่เริ่ม: 2026-07-19
