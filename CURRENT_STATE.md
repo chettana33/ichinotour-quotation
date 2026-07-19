@@ -4,13 +4,13 @@
 
 ## Development ล่าสุด
 
-- เวอร์ชัน: v5.8.2 CI
+- เวอร์ชัน: v5.8.3 CI
 - สถานะ: Development / Static QA passed / Shortcut User QA passed
-- ไฟล์: `development/quotation_v5_8_2_CI.html`
-- SHA-256: `8a8226962426d77674f4e64902a069dc532bbec674b8cfc60ac7f2dc0d7749a8`
-- Base: v5.8.1 CI
-- Scope: ปุ่มจากศูนย์จัดการใบเสนอราคากลับไปด้านบน
-- QA Report: `qa/QA_REPORT_v5_8_2_CI.md`
+- ไฟล์: `development/quotation_v5_8_3_CI.html`
+- SHA-256: `662bd65a7bb989efcf713b2d1aeaca70e9d596d4a4835d4013260de7839dc40c`
+- Base: v5.8.2 CI
+- Scope: รวมปุ่มลัดขึ้น/ลงไว้กับปุ่มล้างฟอร์ม และเพิ่ม fixture 25 records
+- QA Report: `qa/QA_REPORT_v5_8_3_CI.md`
 
 ## ฐาน v5.8 ที่รักษาไว้
 
@@ -44,7 +44,7 @@
 
 ## Next Action
 
-ฟีเจอร์ปุ่มลัดขึ้น/ลง, Customer Database, Backup/Restore และ Sort ทั้ง 5 แบบของ v5.8.2 ผ่าน User QA แล้ว งาน QA หลักที่ยังค้าง ได้แก่การยืนยัน 25 records/Pagination และ v5.7 Migration
+เผยแพร่ v5.8.3 แล้ว ให้พี่เจยืนยันตำแหน่ง/การทำงานของปุ่มลัดทั้งสอง และ Import `qa/fixtures/pagination_25_records.json` เพื่อยืนยันหน้าแรก 20 รายการ หน้าที่สอง 5 รายการ งาน QA หลักถัดไปคือ v5.7 Migration
 
 ## ข้อห้าม ณ สถานะนี้
 
