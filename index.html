@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotation Generator V5.8.1 CI Edition</title>
+  <title>Quotation Generator V5.8.2 CI Edition</title>
   <style>
     :root{
       --primary:#06358f;
@@ -135,7 +135,7 @@
 <body>
 <div class="app">
   <aside class="panel no-print">
-    <h1>Quotation HTML V5.8.1 CI</h1>
+    <h1 id="quotationPanelTop">Quotation HTML V5.8.2 CI</h1>
     <p class="small">สร้างใบเสนอราคาแบบใช้งานจริง หน่วยเงิน Yen พร้อมแปลงเป็นเงินบาท | Print / Save PDF</p>
     <button class="btn secondary" type="button" onclick="scrollToRecordManager()">↓ ไปศูนย์จัดการใบเสนอราคา</button>
 
@@ -262,6 +262,7 @@ CANCELLATION FEE
       <button class="btn secondary" type="button" onclick="exportBackup()">Export Backup</button>
       <label class="btn secondary" style="display:inline-block">Import Backup<input type="file" id="backupInput" accept="application/json,.json" hidden onchange="importBackup(event)"></label>
       <p class="small">แสดงครั้งละ 20 รายการ ข้อมูลเก็บใน Browser เครื่องนี้ ควร Export Backup เป็นประจำ</p>
+      <button class="btn secondary" type="button" onclick="scrollToPanelTop()">↑ กลับด้านบน</button>
     </div>
   </aside>
 
@@ -388,6 +389,7 @@ function renderAll(){
 function setText(id,t){document.getElementById(id).textContent=t||''}
 function val(id){return document.getElementById(id).value}
 function scrollToRecordManager(){document.getElementById('recordManager')?.scrollIntoView({behavior:'smooth',block:'start'});}
+function scrollToPanelTop(){document.getElementById('quotationPanelTop')?.scrollIntoView({behavior:'smooth',block:'start'});}
 function fmtDate(v){if(!v)return '-'; const d=new Date(v+'T00:00:00'); return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});}
 function escapeHtml(s){return String(s||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\'':'&#39;','"':'&quot;'}[c]))}
 function escapeAttr(s){return escapeHtml(s).replace(/"/g,'&quot;')}
