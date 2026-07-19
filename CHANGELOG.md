@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v5.8.4 CI RC1 — Release Candidate
+
+- Promote จาก Development v5.8.4 ที่ผ่าน Static และ User Interactive QA
+- RC1 ตรงกับ Development source แบบ byte-for-byte
+- ไม่มี code change ระหว่าง promotion
+- รอพี่เจอนุมัติเป็น Approved Master
+
 ## v5.8.4 CI — Development
 
 - เปลี่ยนค่าเริ่มต้นหลังเปิดหน้า/F5 ให้เลือกเฉพาะ HOTEL และ BUS
