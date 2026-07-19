@@ -24,13 +24,13 @@
 
 ## Phase 4 — Release Candidate
 
-- สถานะ: v5.8.4 CI RC1 created / Awaiting user acceptance
+- สถานะ: Completed — v5.8.4 CI RC1 promoted
 - QA ที่กำหนดผ่านและพี่เจอนุมัติให้สร้าง RC1 แล้ว
 
 ## Phase 5 — Approved Release
 
-- สถานะ: Not started
-- เกิดขึ้นเมื่อพี่เจตรวจรับและอนุมัติชัดเจน
+- สถานะ: Completed — v5.8.4 CI Approved Master
+- พี่เจตรวจรับและอนุมัติชัดเจนเมื่อ 2026-07-19
 
 ## Future Backlog — ยังไม่อนุมัติ
 
