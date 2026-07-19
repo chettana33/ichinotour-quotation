@@ -15,9 +15,16 @@
 
 ## Result
 
-- Status: **Blocked by test environment**
+- Status: **Partially executed / Interactive automation blocked by JavaScript dialog handling**
+- GitHub Pages deployment: **Passed**
+- Public URL: `https://chettana33.github.io/ichinotour-quotation/`
+- Page title and v5.8 initial UI render: **Passed**
+- Default date, valid-until date, status options, categories, customer manager and record manager controls rendered: **Passed**
+- ไม่พบ console error จากตัว Quotation ระหว่าง initial load (พบเฉพาะ error จาก Browser extension ของสภาพแวดล้อมทดสอบ)
+- เมื่อทดสอบ Save New ระบบเปิด JavaScript `alert()` ตามการออกแบบ แต่เครื่องมือ automation ค้างระหว่าง click/dialog จึงไม่สามารถทำ loop สร้าง 25 records ต่อได้
 - ไม่มีรายการใดถูกเปลี่ยนจาก Pending เป็น Passed
-- ไม่พบ defect ใหม่ เพราะยังไม่สามารถเริ่ม interaction จริง
+- ไม่จัดเหตุการณ์ dialog เป็น defect ของ Quotation เพราะยังไม่มีหลักฐานว่าผู้ใช้จริงทำงานผิดปกติ
+- ไม่พบ defect ใหม่ที่ยืนยันได้
 - ไม่มีการแก้โค้ด
 
 ## User Browser Test Run
