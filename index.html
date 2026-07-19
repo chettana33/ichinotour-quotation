@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotation Generator V5.8.3 CI Edition</title>
+  <title>Quotation Generator V5.8.4 CI Edition</title>
   <style>
     :root{
       --primary:#06358f;
@@ -135,7 +135,7 @@
 <body>
 <div class="app">
   <aside class="panel no-print">
-    <h1 id="quotationPanelTop">Quotation HTML V5.8.3 CI</h1>
+    <h1 id="quotationPanelTop">Quotation HTML V5.8.4 CI</h1>
     <p class="small">สร้างใบเสนอราคาแบบใช้งานจริง หน่วยเงิน Yen พร้อมแปลงเป็นเงินบาท | Print / Save PDF</p>
 
     <h2>Logo</h2>
@@ -320,7 +320,7 @@ let recordPage = 1;
 function init(){
   document.getElementById('quoteDate').valueAsDate = new Date();
   const d = new Date(); d.setDate(d.getDate()+14); document.getElementById('validUntil').valueAsDate = d;
-  categories.forEach(c=>{data[c.id]={enabled:true, items:[defaultItem(c)]}});
+  categories.forEach(c=>{data[c.id]={enabled:c.id==='hotel'||c.id==='bus', items:[defaultItem(c)]}});
   buildCategoryForms();
   bindInputs();
   renderAll();
