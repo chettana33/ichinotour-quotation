@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quotation Generator V5.8 CI Edition</title>
+  <style>
+    :root{
+      --primary:#06358f;
+      --primary2:#008ee8;
+      --accent:#0798e8;
+      --bg:#eef7ff;
+      --card:#ffffff;
+      --line:#d9e2ec;
+      --text:#1d2733;
+      --muted:#6b7785;
+      --danger:#b42318;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:var(--doc-font, Arial),'Noto Sans Thai',Tahoma,sans-serif;background:var(--bg);color:var(--text);font-size:14px;overflow:hidden}
+    .app{display:grid;grid-template-columns:420px 1fr;height:100vh;overflow:hidden}
+    .panel{background:#fff;border-right:1px solid var(--line);padding:20px;overflow-y:auto;height:100vh;overscroll-behavior:contain}
+    .preview-wrap{padding:24px;overflow:auto;height:100vh;overscroll-behavior:contain}
+    h1,h2,h3{margin:0}
+    h1{font-size:24px;color:var(--primary)}
+    h2{font-size:18px;color:var(--primary);margin:24px 0 10px;border-bottom:2px solid var(--accent);padding-bottom:6px}
+    h3{font-size:15px;color:var(--primary);margin:16px 0 8px}
+    label{display:block;font-weight:700;margin:10px 0 4px;color:#26384d}
+    input,textarea,select{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:14px;background:#fff}
+    textarea{min-height:80px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+    .btn{border:0;border-radius:9px;padding:10px 12px;font-weight:700;cursor:pointer;background:var(--primary);color:#fff;margin:4px 4px 4px 0}
+    .btn:hover{background:var(--primary2)}
+    .btn.secondary{background:#e9eef5;color:#18324a}
+    .btn.danger{background:var(--danger)}
+    .btn.gold{background:var(--accent);color:#162333}
+    .category-card{border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;background:#fbfdff}
+    .category-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px}
+    .toggle{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--primary)}
+    .toggle input{width:auto;transform:scale(1.15)}
+    .item-box{border:1px dashed #c7d4e2;border-radius:12px;padding:10px;margin:10px 0;background:#fff}
+    .small{font-size:12px;color:var(--muted)}
+    .item-note-input{min-height:74px;white-space:pre-wrap}
+    .actions{position:sticky;bottom:0;background:#fff;padding-top:12px;border-top:1px solid var(--line);margin-top:20px}
+    .saved-library{border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:16px;background:#f8fcff}
+    .saved-library h3{margin:0 0 8px}
+    .saved-meta{font-size:12px;color:var(--muted);margin-top:6px;white-space:pre-line}
+    .manager-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .manager-row{display:flex;gap:6px;align-items:end;flex-wrap:wrap}
+    .manager-row>*{flex:1;min-width:110px}
+    .pagination{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+    .favorite-label{display:flex;align-items:center;gap:8px;margin-top:10px}
+    .favorite-label input{width:auto}
+    .paper{width:210mm;min-height:297mm;background:#fff;margin:0 auto;padding:6mm;box-shadow:0 8px 30px rgba(0,0,0,.12);font-size:var(--preview-font-size,14px);color:var(--preview-text,#1d2733)}
+    .quote-header{display:grid;grid-template-columns:120px 1fr 210px;gap:18px;align-items:start;border-bottom:4px solid var(--primary);padding-bottom:14px}
+    .logo-box{width:110px;height:80px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff}
+    .logo-box img{max-width:100%;max-height:100%;object-fit:contain}
+    .title{text-align:center}
+    .title .main{font-size:30px;font-weight:800;color:var(--primary);letter-spacing:1px}
+    .title .sub{font-size:15px;color:var(--muted);margin-top:4px}
+    .quote-meta{font-size:13px;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fbfdff}
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+    .info-card{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfdff;min-height:120px}
+    .info-card h3{margin-top:0;color:#fff;background:var(--primary);padding:7px 10px;border-radius:8px;font-size:14px}
+    .line{white-space:pre-line;line-height:1.55}
+    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12.5px;table-layout:fixed;max-width:100%}
+    th,td{overflow-wrap:anywhere;word-break:break-word}
+    .date-cell{white-space:nowrap;overflow-wrap:normal;word-break:normal;font-size:11.5px}
+    th{background:var(--primary);color:#fff;padding:8px;border:1px solid var(--primary);text-align:left}
+    td{padding:7px;border:1px solid var(--line);vertical-align:top}
+    .item-note-row td{background:#fcfdff;white-space:pre-wrap;line-height:1.55}
+    .item-note-label{font-weight:800;color:var(--primary);display:inline;margin:0 .35em 0 0}
+    tfoot td{font-weight:800;background:#f7fafc}
+    .text-right{text-align:right}.text-center{text-align:center}
+    .category-title{margin-top:18px;font-size:16px;color:var(--primary);font-weight:800;display:flex;align-items:center;gap:8px}
+    .category-title:before{content:'';display:block;width:8px;height:22px;background:var(--accent);border-radius:4px}
+    .total-box{margin-left:auto;margin-top:20px;width:360px;border:2px solid var(--primary);border-radius:12px;overflow:hidden}
+    .total-row{display:flex;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line)}
+    .total-row.grand{background:var(--primary);color:#fff;font-size:20px;font-weight:900;border-bottom:0}
+    .notes{margin-top:18px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfdff}
+    .signature{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:40px;text-align:center}
+    .sig-line{border-top:1px solid #333;padding-top:8px;margin-top:55px}
+    .pill{display:inline-block;background:#eef5fb;border:1px solid #d7e5f2;color:var(--primary);border-radius:999px;padding:2px 8px;font-size:11px;margin:1px}
+    .category-block{break-inside:avoid;page-break-inside:avoid;margin-top:12px}
+    .select-style-toolbar{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fbfdff;margin-top:8px}
+    .select-style-toolbar .mini-row{display:grid;grid-template-columns:1fr 80px 80px;gap:8px;align-items:end}
+    .paper [contenteditable="true"]{outline:1px dashed transparent;cursor:text}
+    .paper [contenteditable="true"]:focus{outline:1px dashed #8bb8dc;background:#fffef7}
+
+    @media(max-width:1100px){body{overflow:auto}.app{grid-template-columns:1fr;height:auto;overflow:visible}.panel{height:auto;max-height:none}.preview-wrap{height:auto}.paper{width:100%;min-height:auto}.quote-header{grid-template-columns:1fr}.title{text-align:left}.info-grid{grid-template-columns:1fr}}
+    @media print{
+      *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+      @page{size:A4;margin:0}
+      html,body{background:#fff!important;width:210mm;margin:0!important;padding:0!important;font-size:14px}
+      .app{display:block!important;min-height:0!important}
+      .panel,.no-print{display:none!important}
+      .preview-wrap{display:block!important;padding:0!important;margin:0!important;overflow:visible!important;background:#fff!important}
+      .paper{box-shadow:none!important;width:210mm!important;min-height:297mm!important;margin:0 auto!important;padding:6mm!important;background:#fff!important}
+
+      /* บังคับ layout ตอน Print ให้เหมือนหน้า Preview ไม่ให้โดน media query จอเล็กเปลี่ยนเป็น 1 คอลัมน์ */
+      .quote-header{display:grid!important;grid-template-columns:120px 1fr 210px!important;gap:18px!important;align-items:start!important;border-bottom:4px solid var(--primary)!important;padding-bottom:14px!important;break-inside:avoid;page-break-inside:avoid}
+      .title{text-align:center!important}
+      .title .main{font-size:30px!important}
+      .info-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;margin-top:18px!important;break-inside:avoid;page-break-inside:avoid}
+      .logo-box{width:110px!important;height:80px!important}
+      .quote-meta{font-size:13px!important}
+
+      .total-box,.notes,.signature{break-inside:avoid;page-break-inside:avoid}
+      .category-block{break-inside:avoid;page-break-inside:avoid;page-break-after:auto;margin-top:12px!important}
+      .category-title{break-after:avoid;page-break-after:avoid;margin-top:18px!important}
+      table{break-inside:auto;page-break-inside:auto;width:100%!important}
+      thead{display:table-header-group} tfoot{display:table-row-group}
+      tr,.item-note-row{break-inside:avoid;page-break-inside:avoid}
+      th,td{font-size:12.5px!important}
+      td.date-cell{white-space:nowrap!important;font-size:11.2px!important;overflow-wrap:normal!important;word-break:normal!important}
+      th,td{overflow-wrap:anywhere!important;word-break:break-word!important}
+    }
+  
+    /* Ichino Tour (Thailand) CI Edition */
+    .paper{position:relative;border-top:7px solid #0798e8;background:linear-gradient(180deg,#fff 0%,#fff 91%,#eef8ff 100%)}
+    .paper:after{content:"❄";position:absolute;right:9mm;top:5mm;font-size:34px;color:#0798e8;opacity:.16;pointer-events:none}
+    .quote-header{border-bottom:5px solid #0798e8}
+    .logo-box{width:125px;height:92px;border-color:#b8dcf5}
+    .title .main{color:#06358f;text-transform:none}
+    .title .sub{color:#087ec5;font-weight:700}
+    .info-card,.quote-meta,.notes{background:#f8fcff;border-color:#b8dcf5}
+    .category-title:before{background:linear-gradient(#0798e8,#06358f)}
+    .total-box{border-color:#0798e8}
+    .total-row.grand{background:linear-gradient(90deg,#06358f,#0798e8)}
+    @media print{.paper{border-top:7px solid #0798e8!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside class="panel no-print">
+    <h1>Quotation HTML V5.8 CI</h1>
+    <p class="small">สร้างใบเสนอราคาแบบใช้งานจริง หน่วยเงิน Yen พร้อมแปลงเป็นเงินบาท | Print / Save PDF</p>
+
+    <h2>Logo</h2>
+    <label>อัปโหลดโลโก้</label>
+    <input type="file" id="logoInput" accept="image/*" />
+
+    <h2>ข้อมูลใบเสนอราคา</h2>
+    <div class="row">
+      <div><label>เลขที่ใบเสนอราคา</label><input id="quoteNo" value="QT-2026-001"></div>
+      <div><label>วันที่ออก</label><input type="date" id="quoteDate"></div>
+    </div>
+    <div class="row">
+      <div><label>Valid Until</label><input type="date" id="validUntil"></div>
+      <div><label>Currency</label><input id="currency" value="JPY / Yen → THB"></div>
+    </div>
+    <label>ชื่อทริป / โปรแกรม</label><input id="tripName" value="(ใส่ Tour Code ถ้ามี)">
+    <div class="row">
+      <div><label>สถานะ</label><select id="quoteStatus"><option value="Draft">Draft</option><option value="Sent">Sent</option><option value="Confirmed">Confirmed</option><option value="Cancelled">Cancelled</option></select></div>
+      <div><label class="favorite-label"><input type="checkbox" id="isFavorite"> ⭐ ปักหมุดรายการสำคัญ</label></div>
+    </div>
+    <div class="row">
+      <div><label>เรทแปลงเงิน Yen → Baht</label><input type="number" id="exchangeRate" value="0.21" step="0.0001" min="0"></div>
+      <div><label>วิธีคำนวณ</label><input value="ยอด Yen × เรท = Baht" readonly></div>
+    </div>
+    <p class="small">ค่าเริ่มต้น: 1 Yen = 0.21 Baht เช่น 100 Yen = 21 Baht สามารถแก้เรทเองได้</p>
+
+
+    <h2>ปรับฟอนต์ / สี</h2>
+    <div class="row3">
+      <div><label>Font</label><select id="fontFamily"><option value="Arial">Arial</option><option value="Tahoma">Tahoma</option><option value="Verdana">Verdana</option><option value="Georgia">Georgia</option></select></div>
+      <div><label>ขนาด</label><input type="number" id="fontSize" value="14" min="10" max="24"></div>
+      <div><label>สีตัวอักษร</label><input type="color" id="textColor" value="#1d2733"></div>
+    </div>
+    <div class="row">
+      <div><label>สีหัวข้อหลัก</label><input type="color" id="primaryColor" value="#0f3a5f"></div>
+      <div><label>สี Accent</label><input type="color" id="accentColor" value="#d4af37"></div>
+    </div>
+    <div class="select-style-toolbar">
+      <b>ปรับเฉพาะข้อความที่เลือกในหน้า Preview</b>
+      <p class="small">เลือกข้อความในเอกสารด้านขวา แล้วกดปุ่มด้านล่าง</p>
+      <div class="mini-row">
+        <div><label>Font ข้อความที่เลือก</label><select id="selectedFont"><option value="Arial">Arial</option><option value="Tahoma">Tahoma</option><option value="Verdana">Verdana</option><option value="Georgia">Georgia</option></select></div>
+        <div><label>ขนาด</label><input type="number" id="selectedFontSize" value="14" min="8" max="40"></div>
+        <div><label>สี</label><input type="color" id="selectedColor" value="#1d2733"></div>
+      </div>
+      <button class="btn secondary" type="button" onmousedown="event.preventDefault()" onclick="applySelectedStyle()">ใช้กับข้อความที่เลือก</button>
+      <button class="btn secondary" type="button" onmousedown="event.preventDefault()" onclick="restorePreviewSelection();document.execCommand('bold')">ตัวหนา</button>
+      <button class="btn secondary" type="button" onmousedown="event.preventDefault()" onclick="restorePreviewSelection();document.execCommand('italic')">ตัวเอียง</button>
+    </div>
+
+    <h2>ผู้ออกใบเสนอราคา</h2>
+    <textarea id="sellerInfo">ICHINO TOUR (Thailand)
+Email :  info@ichinotour-thailand.com
+Tel: 093-603-6203
+Jay</textarea>
+
+    <h2>ข้อมูลลูกค้า</h2>
+    <div class="manager-row">
+      <div><label>เลือกลูกค้าเดิม</label><select id="customerSelect"><option value="">-- เลือกลูกค้า --</option></select></div>
+      <button class="btn secondary" type="button" onclick="applySelectedCustomer()">ใช้ข้อมูลลูกค้า</button>
+    </div>
+    <textarea id="customerInfo">Customer / Travel Agency Name
+Contact Person:
+Email:
+Tel:</textarea>
+    <button class="btn secondary" type="button" onclick="saveCustomerProfile()">บันทึก/อัปเดตข้อมูลลูกค้า</button>
+
+    <h2>รายการเสนอราคา</h2>
+    <div id="categories"></div>
+
+    <h2>ตั้งค่า Dropdown รถ BUS</h2>
+    <p class="small">แก้ไขชนิดรถได้ โดยใส่ 1 รายการต่อ 1 บรรทัด</p>
+    <textarea id="busOptions">Hiace (Full Day)
+Hiace (Transfer)
+
+Velfile (Full Day)
+Velfile (Transfer)
+
+Micro Bus (Full Day)
+Micro Bus (Transfer)
+
+Middle Bus (Full Day)
+Middle Bus (Transfer)
+
+Big Bus (Full Day)
+Big Bus (Transfer)</textarea>
+
+    <h2>หมายเหตุเพิ่มเติม</h2>
+    <textarea id="remarks">หมายเหตุ / รายละเอียดเพิ่มเติม:
+- ราคานี้เป็นราคาเสนอเบื้องต้น อาจเปลี่ยนแปลงตามจำนวนผู้เดินทางและวันเดินทางจริง
+- กรุณาตรวจสอบรายละเอียดก่อนยืนยันการจอง
+
+BUS SERVICE [10 HRS. ] DURING 8:00-18:00 ONLY OVERTIME EVERY 30 MINS 5,000 JPY
+CANCELLATION FEE
+- NOTIFY BEFORE GROUP DURATION 20 DAYS MUST BE GOOD
+- NOTIFY BEFORE GROUP DURATION 15 DAYS MUST BE 30% FOR TOUR FARE
+- NOTIFY BEFORE GROUP DURATION10 DAYS MUST BE 50% FOR TOUR FARE
+- NOTIFY BEFORE GROUP DURATION 7 DAYS MUST BE 100% FOR TOUR FARE</textarea>
+
+    <div class="actions">
+      <button class="btn" onclick="renderAll()">อัปเดต Preview</button>
+      <button class="btn gold" onclick="window.print()">Print / Save PDF</button>
+      <button class="btn secondary" type="button" onclick="saveAsNew()">บันทึกเป็นรายการใหม่</button>
+      <button class="btn secondary" type="button" onclick="updateCurrentRecord()">อัปเดตรายการที่โหลด</button>
+      <button class="btn danger" onclick="clearForm()">ล้างฟอร์ม</button>
+    </div>
+
+    <div class="saved-library">
+      <h3>ศูนย์จัดการใบเสนอราคา</h3>
+      <label>ค้นหา</label><input id="recordSearch" placeholder="เลข Quotation / ลูกค้า / ชื่อทริป" oninput="resetAndRefreshRecords()">
+      <div class="manager-grid">
+        <div><label>ปี</label><select id="yearFilter" onchange="resetAndRefreshRecords()"><option value="">ทุกปี</option></select></div>
+        <div><label>สถานะ</label><select id="statusFilter" onchange="resetAndRefreshRecords()"><option value="">ทุกสถานะ</option><option>Draft</option><option>Sent</option><option>Confirmed</option><option>Cancelled</option></select></div>
+        <div><label>รายการ</label><select id="favoriteFilter" onchange="resetAndRefreshRecords()"><option value="">ทั้งหมด</option><option value="favorite">เฉพาะที่ปักหมุด</option></select></div>
+        <div><label>เรียงตาม</label><select id="sortRecords" onchange="resetAndRefreshRecords()"><option value="updatedDesc">แก้ไขล่าสุด</option><option value="createdDesc">สร้างล่าสุด</option><option value="customerAsc">ลูกค้า A–Z</option><option value="quoteAsc">เลข Quotation</option><option value="tripDateAsc">วันเดินทางใกล้สุด</option></select></div>
+      </div>
+      <label>ผลการค้นหา</label><select id="savedRecordSelect" size="8" onchange="showSavedRecordMeta()"></select>
+      <div class="saved-meta" id="savedRecordMeta">ยังไม่มีรายการที่เลือก</div>
+      <button class="btn secondary" type="button" onclick="loadSelectedRecord()">โหลดรายการ</button>
+      <button class="btn danger" type="button" onclick="deleteSelectedRecord()">ลบรายการ</button>
+      <div class="pagination"><button class="btn secondary" type="button" onclick="changeRecordPage(-1)">← ก่อนหน้า</button><span id="pageInfo">หน้า 1/1</span><button class="btn secondary" type="button" onclick="changeRecordPage(1)">ถัดไป →</button></div>
+      <h3>สำรองและกู้คืน</h3>
+      <button class="btn secondary" type="button" onclick="exportBackup()">Export Backup</button>
+      <label class="btn secondary" style="display:inline-block">Import Backup<input type="file" id="backupInput" accept="application/json,.json" hidden onchange="importBackup(event)"></label>
+      <p class="small">แสดงครั้งละ 20 รายการ ข้อมูลเก็บใน Browser เครื่องนี้ ควร Export Backup เป็นประจำ</p>
+    </div>
+  </aside>
+
+  <main class="preview-wrap">
+    <section class="paper" id="paper">
+      <div class="quote-header">
+        <div class="logo-box"><img id="logoPreview" alt="Logo"></div>
+        <div class="title">
+          <div class="main">QUOTATION</div>
+          <div class="sub" id="pTripName" contenteditable="true"></div>
+        </div>
+        <div class="quote-meta">
+          <div><b>Quotation No:</b> <span id="pQuoteNo"></span></div>
+          <div><b>Date:</b> <span id="pQuoteDate"></span></div>
+          <div><b>Valid Until:</b> <span id="pValidUntil"></span></div>
+          <div><b>Currency:</b> <span id="pCurrency"></span></div>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card"><h3>ISSUED BY</h3><div class="line" id="pSeller" contenteditable="true"></div></div>
+        <div class="info-card"><h3>CUSTOMER</h3><div class="line" id="pCustomer" contenteditable="true"></div></div>
+      </div>
+
+      <div id="quotationTables"></div>
+      <div class="total-box" id="totalBox"></div>
+      <div class="notes"><b>หมายเหตุ / Remarks</b><div class="line" id="pRemarks" contenteditable="true"></div></div>
+      <div class="signature">
+        <div><div class="sig-line">ผู้เสนอราคา / Authorized Signature</div></div>
+        <div><div class="sig-line">ผู้อนุมัติ / Customer Confirmation</div></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+const yen = new Intl.NumberFormat('ja-JP');
+const RECORDS_KEY = 'quotationV58_CI_records';
+const CUSTOMERS_KEY = 'quotationV58_CI_customers';
+const LOGO_KEY = 'quotationLogoV58_CI';
+const PAGE_SIZE = 20;
+const FIRST_BUS_NOTE = 'all inc. driver / gassoline / highway / parking / kaiso / meal / hotel / ochadai dv.';
+const categories = [
+  {id:'hotel', name:'HOTEL', icon:'🏨'},
+  {id:'bus', name:'BUS', icon:'🚌'},
+  {id:'restaurant', name:'RESTAURANT', icon:'🍽️'},
+  {id:'guide', name:'GUIDE / TOUR LEADER', icon:'👤'},
+  {id:'ticket', name:'TICKET / ENTRANCE', icon:'🎫'},
+  {id:'other', name:'OTHER', icon:'📌'}
+];
+let data = {};
+let currentRecordId = null;
+let recordPage = 1;
+
+function init(){
+  document.getElementById('quoteDate').valueAsDate = new Date();
+  const d = new Date(); d.setDate(d.getDate()+14); document.getElementById('validUntil').valueAsDate = d;
+  categories.forEach(c=>{data[c.id]={enabled:true, items:[defaultItem(c)]}});
+  buildCategoryForms();
+  bindInputs();
+  renderAll();
+  refreshSavedRecordList();
+  refreshCustomerList();
+}
+function defaultItem(c){
+  return {description: c.id==='bus'?'Hiace (Full Day)':c.name+' item', start:'', end:'', qty:1, unit:1, price:0, note:c.id==='bus'?FIRST_BUS_NOTE:''};
+}
+function busOptionList(){return val('busOptions').split(/\r?\n/).map(x=>x.trim()).filter(Boolean)}
+function buildCategoryForms(){
+  const wrap=document.getElementById('categories'); wrap.innerHTML='';
+  categories.forEach(cat=>{
+    const card=document.createElement('div'); card.className='category-card'; card.id='form_'+cat.id;
+    card.innerHTML=`<div class="category-head"><label class="toggle"><input type="checkbox" ${data[cat.id].enabled?'checked':''} onchange="data['${cat.id}'].enabled=this.checked;renderAll()"> ${cat.icon} ${cat.name}</label><button class="btn secondary" onclick="addItem('${cat.id}')">+ เพิ่มรายการ</button></div><div id="items_${cat.id}"></div>`;
+    wrap.appendChild(card); renderItems(cat.id);
+  });
+}
+function renderItems(catId){
+  const cat=categories.find(c=>c.id===catId); const box=document.getElementById('items_'+catId); if(!box)return; box.innerHTML='';
+  data[catId].items.forEach((it,i)=>{
+    const div=document.createElement('div'); div.className='item-box';
+    div.innerHTML=`
+      ${catId==='bus'?busSelectHtml(catId,i,it.description):`<label>รายละเอียด</label><input value="${escapeAttr(it.description)}" oninput="data['${catId}'].items[${i}].description=this.value;renderAll()">`}
+      <div class="row"><div><label>วันเริ่มต้น</label><input type="date" value="${it.start}" onchange="data['${catId}'].items[${i}].start=this.value;autoDays('${catId}',${i});renderItems('${catId}');renderAll()"></div><div><label>วันสิ้นสุด</label><input type="date" value="${it.end}" onchange="data['${catId}'].items[${i}].end=this.value;autoDays('${catId}',${i});renderItems('${catId}');renderAll()"></div></div>
+      <div class="row3"><div><label>จำนวน</label><input type="number" min="0" value="${it.qty}" oninput="data['${catId}'].items[${i}].qty=Number(this.value);renderAll()"></div><div><label>Unit / Days</label><input type="number" min="0" value="${it.unit}" oninput="data['${catId}'].items[${i}].unit=Number(this.value);renderAll()"></div><div><label>ราคา / Unit (Yen)</label><input type="number" min="0" value="${it.price}" oninput="data['${catId}'].items[${i}].price=Number(this.value);renderAll()"></div></div>
+      <label>หมายเหตุรายการ</label><textarea class="item-note-input" placeholder="พิมพ์หมายเหตุรายการได้หลายบรรทัด (Alt+Enter หรือ Enter เพื่อขึ้นบรรทัดใหม่)" oninput="data['${catId}'].items[${i}].note=this.value;renderAll()">${escapeHtml(it.note)}</textarea>
+      <button class="btn danger" onclick="removeItem('${catId}',${i})">ลบรายการนี้</button>`;
+    box.appendChild(div);
+  });
+}
+function busSelectHtml(catId,i,desc){
+  const opts=busOptionList();
+  const optionHtml=opts.map(o=>`<option value="${escapeAttr(o)}" ${o===desc?'selected':''}>${escapeHtml(o)}</option>`).join('');
+  return `<label>รายละเอียด / ชนิดรถ</label><select onchange="data['${catId}'].items[${i}].description=this.value;renderAll()">${optionHtml}</select>`;
+}
+function autoDays(catId,i){
+  const it=data[catId].items[i];
+  if(!it || !it.start || !it.end) return;
+  const s=new Date(it.start+'T00:00:00');
+  const e=new Date(it.end+'T00:00:00');
+  if(isNaN(s)||isNaN(e)) return;
+  const diff=Math.round((e-s)/86400000)+1;
+  it.unit = diff>0 ? diff : 1;
+}
+function addItem(catId){const item=defaultItem(categories.find(c=>c.id===catId)); if(catId==='bus' && data[catId].items.length>0) item.note=''; data[catId].items.push(item);renderItems(catId);renderAll()}
+function removeItem(catId,i){data[catId].items.splice(i,1);renderItems(catId);renderAll()}
+function bindInputs(){['quoteNo','quoteDate','validUntil','currency','exchangeRate','tripName','quoteStatus','isFavorite','sellerInfo','customerInfo','remarks','fontFamily','fontSize','textColor','primaryColor','accentColor','busOptions'].forEach(id=>document.getElementById(id).addEventListener('input',renderAll));
+  document.getElementById('busOptions').addEventListener('input',()=>{renderItems('bus');renderAll()});
+  document.getElementById('logoInput').addEventListener('change',e=>{const f=e.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{document.getElementById('logoPreview').src=r.result; safeSet(LOGO_KEY,r.result)}; r.readAsDataURL(f);});
+}
+function renderAll(){
+  document.documentElement.style.setProperty('--doc-font', val('fontFamily'));
+  document.documentElement.style.setProperty('--preview-font-size', (val('fontSize')||14)+'px');
+  document.documentElement.style.setProperty('--preview-text', val('textColor'));
+  document.documentElement.style.setProperty('--primary', val('primaryColor'));
+  document.documentElement.style.setProperty('--primary2', val('primaryColor'));
+  document.documentElement.style.setProperty('--accent', val('accentColor'));
+  setText('pQuoteNo',val('quoteNo')); setText('pQuoteDate',fmtDate(val('quoteDate'))); setText('pValidUntil',fmtDate(val('validUntil'))); setText('pCurrency',val('currency')); setText('pTripName',val('tripName')); setText('pSeller',val('sellerInfo')); setText('pCustomer',val('customerInfo')); setText('pRemarks',val('remarks'));
+  const tables=document.getElementById('quotationTables'); tables.innerHTML=''; let grand=0;
+  categories.forEach(cat=>{ if(!data[cat.id].enabled || data[cat.id].items.length===0)return; let subtotal=0; const rows=data[cat.id].items.map((it,idx)=>{const total=(Number(it.qty)||0)*(Number(it.unit)||0)*(Number(it.price)||0); subtotal+=total; const noteRow=it.note?`<tr class="item-note-row"><td colspan="7"><span class="item-note-label">หมายเหตุรายการ:</span>${escapeHtml(it.note)}</td></tr>`:''; return `<tr><td class="text-center">${idx+1}</td><td>${escapeHtml(it.description)}</td><td class="date-cell">${fmtDate(it.start)} - ${fmtDate(it.end)}</td><td class="text-right">${it.qty}</td><td class="text-right">${it.unit}</td><td class="text-right">¥${yen.format(it.price||0)}</td><td class="text-right">¥${yen.format(total)}</td></tr>${noteRow}`;}).join(''); grand+=subtotal; tables.innerHTML+=`<div class="category-block"><div class="category-title">${cat.icon} ${cat.name}</div><table><thead><tr><th style="width:5%">No.</th><th style="width:28%">Description</th><th style="width:25%">Date</th><th style="width:7%">Qty</th><th style="width:7%">Unit</th><th style="width:13%">Price</th><th style="width:15%">Total</th></tr></thead><tbody>${rows}</tbody><tfoot><tr><td colspan="6" class="text-right">${cat.name} Subtotal</td><td class="text-right">¥${yen.format(subtotal)}</td></tr></tfoot></table></div>`; });
+  const rate = Number(val('exchangeRate')) || 0;
+  const baht = grand * rate;
+  document.getElementById('totalBox').innerHTML=`<div class="total-row"><span>Subtotal (JPY)</span><span>¥${yen.format(grand)}</span></div><div class="total-row"><span>Exchange Rate</span><span>1 Yen = ฿${rate.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:4})}</span></div><div class="total-row"><span>Total (THB)</span><span>฿${baht.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2})}</span></div><div class="total-row grand"><span>GRAND TOTAL (JPY)</span><span>¥${yen.format(grand)}</span></div>`;
+}
+function setText(id,t){document.getElementById(id).textContent=t||''}
+function val(id){return document.getElementById(id).value}
+function fmtDate(v){if(!v)return '-'; const d=new Date(v+'T00:00:00'); return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});}
+function escapeHtml(s){return String(s||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\'':'&#39;','"':'&quot;'}[c]))}
+function escapeAttr(s){return escapeHtml(s).replace(/"/g,'&quot;')}
+let savedPreviewRange = null;
+function savePreviewSelection(){
+  const sel = window.getSelection();
+  const paper = document.getElementById('paper');
+  if(sel && sel.rangeCount && !sel.isCollapsed && paper.contains(sel.anchorNode) && paper.contains(sel.focusNode)){
+    savedPreviewRange = sel.getRangeAt(0).cloneRange();
+  }
+}
+function restorePreviewSelection(){
+  if(!savedPreviewRange) return false;
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(savedPreviewRange);
+  return true;
+}
+document.addEventListener('selectionchange',()=>{
+  const sel=window.getSelection();
+  const paper=document.getElementById('paper');
+  if(sel && sel.rangeCount && !sel.isCollapsed && paper && paper.contains(sel.anchorNode) && paper.contains(sel.focusNode)){
+    savedPreviewRange=sel.getRangeAt(0).cloneRange();
+  }
+});
+function applySelectedStyle(){
+  restorePreviewSelection();
+  const sel=window.getSelection();
+  const paper=document.getElementById('paper');
+  if(!sel || sel.rangeCount===0 || sel.isCollapsed){alert('กรุณาเลือกข้อความในหน้า Preview ก่อน');return;}
+  if(!paper.contains(sel.anchorNode) || !paper.contains(sel.focusNode)){alert('กรุณาเลือกข้อความในหน้า Preview ด้านขวา');return;}
+  const range=sel.getRangeAt(0);
+  const span=document.createElement('span');
+  span.style.fontFamily=val('selectedFont');
+  span.style.fontSize=(Number(val('selectedFontSize'))||14)+'px';
+  span.style.color=val('selectedColor');
+  span.setAttribute('data-custom-style','true');
+  try{
+    const frag=range.extractContents();
+    span.appendChild(frag);
+    range.insertNode(span);
+  }catch(e){
+    alert('ไม่สามารถปรับข้อความที่เลือกได้ กรุณาเลือกเฉพาะข้อความในบรรทัดเดียวหรือในช่องเดียว');
+    return;
+  }
+  sel.removeAllRanges();
+  savedPreviewRange=null;
+}
+function safeSet(key,value){try{localStorage.setItem(key,value); return true;}catch(e){alert('ไม่สามารถ Save Data ได้: พื้นที่จัดเก็บของ Browser ไม่พอ หรือ Browser ปิด localStorage'); return false;}}
+function safeGet(key){try{return localStorage.getItem(key);}catch(e){return null;}}
+function collectForm(){
+  return {
+    version:'V5.8-CI-record-manager',
+    savedAt:new Date().toISOString(),
+    fields:Object.fromEntries(['quoteNo','quoteDate','validUntil','currency','exchangeRate','tripName','quoteStatus','sellerInfo','customerInfo','remarks','fontFamily','fontSize','textColor','primaryColor','accentColor','busOptions'].map(id=>[id,val(id)])),
+    flags:{isFavorite:document.getElementById('isFavorite').checked},
+    data:JSON.parse(JSON.stringify(data)),
+    logo:document.getElementById('logoPreview').src||''
+  };
+}
+function applySavedObject(obj){
+  if(!obj) return;
+  Object.entries(obj.fields||{}).forEach(([k,v])=>{if(document.getElementById(k))document.getElementById(k).value=v});
+  document.getElementById('isFavorite').checked=Boolean(obj.flags&&obj.flags.isFavorite);
+  if(obj.data) data=obj.data;
+  if(data.bus && data.bus.items && data.bus.items[0] && !data.bus.items[0].note){data.bus.items[0].note=FIRST_BUS_NOTE;}
+  if(obj.logo)document.getElementById('logoPreview').src=obj.logo;
+  buildCategoryForms();
+  renderAll();
+}
+function getSavedRecords(){
+  const raw=safeGet(RECORDS_KEY);
+  if(!raw)return [];
+  try{const records=JSON.parse(raw); return Array.isArray(records)?records:[];}
+  catch(e){alert('รายการที่บันทึกไว้เสียหายหรืออ่านไม่ได้');return [];}
+}
+function saveRecords(records){return safeSet(RECORDS_KEY,JSON.stringify(records));}
+function newRecordId(){return 'Q-'+Date.now()+'-'+Math.random().toString(36).slice(2,9);}
+function customerSummary(){
+  return val('customerInfo').split(/\r?\n/).map(x=>x.trim()).find(Boolean)||'ไม่ระบุลูกค้า';
+}
+function recordLabel(record){
+  const meta=record.meta||{};
+  return `${meta.quoteNo||'ไม่มีเลขที่'} | ${meta.customer||'ไม่ระบุลูกค้า'} | ${meta.tripName||'ไม่ระบุทริป'}`;
+}
+function makeRecord(existing){
+  const now=new Date().toISOString();
+  const starts=Object.values(data).flatMap(cat=>cat.items||[]).map(it=>it.start).filter(Boolean).sort();
+  return {
+    id:existing?.id||newRecordId(),
+    meta:{
+      quoteNo:val('quoteNo').trim(),
+      customer:customerSummary(),
+      tripName:val('tripName').trim(),
+      status:val('quoteStatus')||'Draft',
+      favorite:document.getElementById('isFavorite').checked,
+      quoteYear:(val('quoteDate')||now).slice(0,4),
+      tripStart:starts[0]||'',
+      createdAt:existing?.meta?.createdAt||now,
+      updatedAt:now
+    },
+    payload:collectForm()
+  };
+}
+function filteredRecords(){
+  const search=(document.getElementById('recordSearch')?.value||'').trim().toLowerCase();
+  const year=document.getElementById('yearFilter')?.value||'';
+  const status=document.getElementById('statusFilter')?.value||'';
+  const favorite=document.getElementById('favoriteFilter')?.value||'';
+  const sort=document.getElementById('sortRecords')?.value||'updatedDesc';
+  const rows=getSavedRecords().filter(r=>{
+    const m=r.meta||{};
+    const hay=[m.quoteNo,m.customer,m.tripName].join(' ').toLowerCase();
+    return (!search||hay.includes(search))&&(!year||m.quoteYear===year)&&(!status||m.status===status)&&(!favorite||m.favorite);
+  });
+  const cmp={
+    updatedDesc:(a,b)=>String(b.meta?.updatedAt||'').localeCompare(String(a.meta?.updatedAt||'')),
+    createdDesc:(a,b)=>String(b.meta?.createdAt||'').localeCompare(String(a.meta?.createdAt||'')),
+    customerAsc:(a,b)=>String(a.meta?.customer||'').localeCompare(String(b.meta?.customer||''),'th'),
+    quoteAsc:(a,b)=>String(a.meta?.quoteNo||'').localeCompare(String(b.meta?.quoteNo||''),undefined,{numeric:true}),
+    tripDateAsc:(a,b)=>String(a.meta?.tripStart||'9999').localeCompare(String(b.meta?.tripStart||'9999'))
+  };
+  return rows.sort(cmp[sort]||cmp.updatedDesc);
+}
+function refreshYearFilter(){
+  const select=document.getElementById('yearFilter');
+  if(!select)return;
+  const current=select.value;
+  const years=[...new Set(getSavedRecords().map(r=>r.meta?.quoteYear).filter(Boolean))].sort().reverse();
+  select.innerHTML='<option value="">ทุกปี</option>'+years.map(y=>`<option value="${escapeAttr(y)}">${escapeHtml(y)}</option>`).join('');
+  if(years.includes(current))select.value=current;
+}
+function refreshSavedRecordList(selectedId){
+  const select=document.getElementById('savedRecordSelect');
+  if(!select)return;
+  refreshYearFilter();
+  const records=filteredRecords();
+  const totalPages=Math.max(1,Math.ceil(records.length/PAGE_SIZE));
+  recordPage=Math.min(Math.max(1,recordPage),totalPages);
+  const pageRows=records.slice((recordPage-1)*PAGE_SIZE,recordPage*PAGE_SIZE);
+  select.innerHTML='';
+  pageRows.forEach(record=>{
+    const option=document.createElement('option');
+    option.value=record.id;
+    option.textContent=(record.meta?.favorite?'⭐ ':'')+`[${record.meta?.status||'Draft'}] `+recordLabel(record);
+    select.appendChild(option);
+  });
+  if(selectedId&&pageRows.some(r=>r.id===selectedId))select.value=selectedId;
+  document.getElementById('pageInfo').textContent=`${records.length} รายการ | หน้า ${recordPage}/${totalPages}`;
+  showSavedRecordMeta();
+}
+function resetAndRefreshRecords(){recordPage=1;refreshSavedRecordList();}
+function changeRecordPage(delta){recordPage+=delta;refreshSavedRecordList();}
+function showSavedRecordMeta(){
+  const id=document.getElementById('savedRecordSelect').value;
+  const record=getSavedRecords().find(r=>r.id===id);
+  const box=document.getElementById('savedRecordMeta');
+  if(!record){box.textContent=currentRecordId?'กำลังแก้ไขรายการที่โหลดไว้':'ยังไม่มีรายการที่เลือก';return;}
+  const created=new Date(record.meta.createdAt).toLocaleString('th-TH');
+  const updated=new Date(record.meta.updatedAt).toLocaleString('th-TH');
+  box.textContent=`${recordLabel(record)}\nสถานะ: ${record.meta.status||'Draft'}${record.meta.favorite?' | ⭐ ปักหมุด':''}\nสร้าง: ${created}\nแก้ไขล่าสุด: ${updated}`;
+}
+function saveAsNew(){
+  renderAll();
+  const quoteNo=val('quoteNo').trim();
+  if(!quoteNo){alert('กรุณากรอกเลขที่ใบเสนอราคาก่อนบันทึกเป็นรายการใหม่');return;}
+  const records=getSavedRecords();
+  if(records.some(r=>(r.meta?.quoteNo||'').trim().toLowerCase()===quoteNo.toLowerCase())){
+    alert('เลขที่ใบเสนอราคานี้มีอยู่แล้ว กรุณาเปลี่ยนเลขที่ หรือโหลดรายการเดิมแล้วกดอัปเดตรายการที่โหลด');return;
+  }
+  const record=makeRecord();
+  records.push(record);
+  if(saveRecords(records)){
+    currentRecordId=record.id;
+    refreshSavedRecordList(record.id);
+    alert('บันทึกเป็นรายการใหม่เรียบร้อยแล้ว');
+  }
+}
+function updateCurrentRecord(){
+  const selected=document.getElementById('savedRecordSelect').value;
+  const targetId=currentRecordId||selected;
+  if(!targetId){alert('กรุณา Load รายการที่ต้องการแก้ไขก่อนกด Update Current');return;}
+  const records=getSavedRecords();
+  const index=records.findIndex(r=>r.id===targetId);
+  if(index<0){alert('ไม่พบรายการเดิม กรุณาเลือกและ Load ใหม่');return;}
+  const quoteNo=val('quoteNo').trim();
+  if(!quoteNo){alert('กรุณากรอกเลขที่ใบเสนอราคา');return;}
+  if(records.some((r,i)=>i!==index&&(r.meta?.quoteNo||'').trim().toLowerCase()===quoteNo.toLowerCase())){
+    alert('เลขที่ใบเสนอราคานี้ซ้ำกับรายการอื่น');return;
+  }
+  if(!confirm('อัปเดตรายการที่โหลดอยู่หรือไม่?'))return;
+  records[index]=makeRecord(records[index]);
+  if(saveRecords(records)){
+    currentRecordId=targetId;
+    refreshSavedRecordList(targetId);
+    alert('อัปเดตรายการเรียบร้อยแล้ว');
+  }
+}
+function loadSelectedRecord(){
+  const id=document.getElementById('savedRecordSelect').value;
+  if(!id){alert('กรุณาเลือกรายการที่ต้องการ Load');return;}
+  const record=getSavedRecords().find(r=>r.id===id);
+  if(!record){alert('ไม่พบรายการที่เลือก');refreshSavedRecordList();return;}
+  applySavedObject(record.payload);
+  currentRecordId=id;
+  refreshSavedRecordList(id);
+  document.getElementById('savedRecordMeta').textContent='กำลังแก้ไข: '+recordLabel(record);
+  alert('Load รายการเรียบร้อยแล้ว');
+}
+function deleteSelectedRecord(){
+  const id=document.getElementById('savedRecordSelect').value;
+  if(!id){alert('กรุณาเลือกรายการที่ต้องการลบ');return;}
+  const records=getSavedRecords();
+  const record=records.find(r=>r.id===id);
+  if(!record){alert('ไม่พบรายการที่เลือก');refreshSavedRecordList();return;}
+  if(!confirm('ลบรายการนี้หรือไม่?\n'+recordLabel(record)))return;
+  const next=records.filter(r=>r.id!==id);
+  if(saveRecords(next)){
+    if(currentRecordId===id)currentRecordId=null;
+    refreshSavedRecordList();
+    alert('ลบรายการเรียบร้อยแล้ว');
+  }
+}
+function getCustomers(){
+  const raw=safeGet(CUSTOMERS_KEY);
+  if(!raw)return [];
+  try{const rows=JSON.parse(raw);return Array.isArray(rows)?rows:[];}catch(e){return [];}
+}
+function saveCustomers(rows){return safeSet(CUSTOMERS_KEY,JSON.stringify(rows));}
+function refreshCustomerList(selectedId){
+  const select=document.getElementById('customerSelect');
+  const rows=getCustomers().sort((a,b)=>a.name.localeCompare(b.name,'th'));
+  select.innerHTML='<option value="">-- เลือกลูกค้า ('+rows.length+' ราย) --</option>';
+  rows.forEach(c=>{const option=document.createElement('option');option.value=c.id;option.textContent=c.name;select.appendChild(option)});
+  if(selectedId&&rows.some(c=>c.id===selectedId))select.value=selectedId;
+}
+function saveCustomerProfile(){
+  const info=val('customerInfo').trim();
+  const name=customerSummary();
+  if(!info||name==='ไม่ระบุลูกค้า'){alert('กรุณากรอกข้อมูลลูกค้าก่อน');return;}
+  const rows=getCustomers();
+  const existing=rows.find(c=>c.name.trim().toLowerCase()===name.toLowerCase());
+  if(existing){
+    if(!confirm('มีชื่อลูกค้านี้แล้ว ต้องการอัปเดตข้อมูลหรือไม่?'))return;
+    existing.info=info;existing.updatedAt=new Date().toISOString();
+    if(saveCustomers(rows)){refreshCustomerList(existing.id);alert('อัปเดตข้อมูลลูกค้าแล้ว');}
+  }else{
+    const row={id:'C-'+Date.now()+'-'+Math.random().toString(36).slice(2,8),name,info,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()};
+    rows.push(row);
+    if(saveCustomers(rows)){refreshCustomerList(row.id);alert('บันทึกข้อมูลลูกค้าแล้ว');}
+  }
+}
+function applySelectedCustomer(){
+  const id=document.getElementById('customerSelect').value;
+  const customer=getCustomers().find(c=>c.id===id);
+  if(!customer){alert('กรุณาเลือกลูกค้า');return;}
+  document.getElementById('customerInfo').value=customer.info;
+  renderAll();
+}
+function exportBackup(){
+  const backup={app:'Ichino Tour Quotation',version:'5.8',exportedAt:new Date().toISOString(),records:getSavedRecords(),customers:getCustomers()};
+  const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=url;a.download='ichino_quotation_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function importBackup(event){
+  const file=event.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const backup=JSON.parse(reader.result);
+      if(!Array.isArray(backup.records)||!Array.isArray(backup.customers))throw new Error('invalid backup');
+      if(!confirm(`นำเข้า ${backup.records.length} ใบเสนอราคา และ ${backup.customers.length} ลูกค้า โดยรวมกับข้อมูลเดิมหรือไม่?`))return;
+      const recordMap=new Map(getSavedRecords().map(x=>[x.id,x]));backup.records.forEach(x=>recordMap.set(x.id,x));
+      const customerMap=new Map(getCustomers().map(x=>[x.id,x]));backup.customers.forEach(x=>customerMap.set(x.id,x));
+      if(saveRecords([...recordMap.values()])&&saveCustomers([...customerMap.values()])){
+        recordPage=1;refreshSavedRecordList();refreshCustomerList();alert('Import Backup เรียบร้อยแล้ว');
+      }
+    }catch(e){alert('ไฟล์ Backup ไม่ถูกต้องหรืออ่านไม่ได้');}
+    event.target.value='';
+  };
+  reader.readAsText(file);
+}
+function migrateV57Records(){
+  if(safeGet(RECORDS_KEY))return;
+  const legacy=safeGet('quotationV57_CI_records');
+  if(!legacy)return;
+  try{
+    const rows=JSON.parse(legacy);
+    if(Array.isArray(rows)){
+      rows.forEach(r=>{
+        r.meta=r.meta||{};
+        r.meta.status=r.meta.status||'Draft';
+        r.meta.favorite=Boolean(r.meta.favorite);
+        r.meta.quoteYear=r.meta.quoteYear||(r.payload?.fields?.quoteDate||r.meta.createdAt||'').slice(0,4);
+      });
+      safeSet(RECORDS_KEY,JSON.stringify(rows));
+    }
+  }catch(e){}
+}
+function clearForm(){
+  if(!confirm('ล้างข้อมูลบนแบบฟอร์มเพื่อเริ่มรายการใหม่? รายการที่ Save ไว้จะไม่ถูกลบ'))return;
+  currentRecordId=null;
+  try{localStorage.removeItem(LOGO_KEY)}catch(e){}
+  location.reload();
+}
+window.onload=()=>{migrateV57Records();init();const lg=safeGet(LOGO_KEY);if(lg)document.getElementById('logoPreview').src=lg;};
+</script>
+</body>
+</html>
