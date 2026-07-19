@@ -9,6 +9,7 @@
 - ผล QA: Import fixture และ Pagination 25 records ผ่าน User QA เมื่อ 2026-07-19
 - ผล QA: ปุ่มลัดทั้งสองอยู่ติดกับปุ่มล้างฟอร์มและใช้งานได้ ผ่าน User QA เมื่อ 2026-07-19
 - QA asset: สร้าง safe Seeder สำหรับ v5.7 Migration โดยไม่ลบข้อมูล v5.8 และบังคับใช้ Incognito/Guest profile
+- Migration QA partial: พบ 3 records ครบ สถานะ Draft และปี 2025 ถูกต้อง ผ่าน User QA เมื่อ 2026-07-19
 
 ## HIST-006 — v5.8.2 Return-to-Top Shortcut
 
