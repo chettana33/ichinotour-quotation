@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotation Generator V5.8.2 CI Edition</title>
+  <title>Quotation Generator V5.8.3 CI Edition</title>
   <style>
     :root{
       --primary:#06358f;
@@ -135,9 +135,8 @@
 <body>
 <div class="app">
   <aside class="panel no-print">
-    <h1 id="quotationPanelTop">Quotation HTML V5.8.2 CI</h1>
+    <h1 id="quotationPanelTop">Quotation HTML V5.8.3 CI</h1>
     <p class="small">สร้างใบเสนอราคาแบบใช้งานจริง หน่วยเงิน Yen พร้อมแปลงเป็นเงินบาท | Print / Save PDF</p>
-    <button class="btn secondary" type="button" onclick="scrollToRecordManager()">↓ ไปศูนย์จัดการใบเสนอราคา</button>
 
     <h2>Logo</h2>
     <label>อัปโหลดโลโก้</label>
@@ -242,6 +241,8 @@ CANCELLATION FEE
       <button class="btn secondary" type="button" onclick="saveAsNew()">บันทึกเป็นรายการใหม่</button>
       <button class="btn secondary" type="button" onclick="updateCurrentRecord()">อัปเดตรายการที่โหลด</button>
       <button class="btn danger" onclick="clearForm()">ล้างฟอร์ม</button>
+      <button class="btn secondary" type="button" onclick="scrollToRecordManager()">↓ ไปศูนย์จัดการใบเสนอราคา</button>
+      <button class="btn secondary" type="button" onclick="scrollToPanelTop()">↑ กลับด้านบน</button>
     </div>
 
     <div class="saved-library" id="recordManager">
@@ -262,7 +263,6 @@ CANCELLATION FEE
       <button class="btn secondary" type="button" onclick="exportBackup()">Export Backup</button>
       <label class="btn secondary" style="display:inline-block">Import Backup<input type="file" id="backupInput" accept="application/json,.json" hidden onchange="importBackup(event)"></label>
       <p class="small">แสดงครั้งละ 20 รายการ ข้อมูลเก็บใน Browser เครื่องนี้ ควร Export Backup เป็นประจำ</p>
-      <button class="btn secondary" type="button" onclick="scrollToPanelTop()">↑ กลับด้านบน</button>
     </div>
   </aside>
 
