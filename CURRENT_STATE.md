@@ -34,7 +34,7 @@
 
 ## Next Action
 
-ยืนยัน Scope กับพี่เจว่าจะทำ Interactive QA ของ v5.8 ตามรายการข้างต้น ก่อนเริ่มแก้โค้ดหรือกำหนดเวอร์ชันถัดไป
+Interactive QA ได้รับการยืนยัน Scope แล้วเมื่อ 2026-07-19 แต่ Browser ทดสอบของ worker ไม่สามารถเปิด `localhost` หรือรันไฟล์ HTML จาก GitHub โดยตรงได้ จึงยังต้องทำ Interactive/Print QA ใน Browser ผู้ใช้ตาม `qa/QA_EXECUTION_v5_8_CI_2026-07-19.md` ก่อนแก้โค้ดหรือกำหนดเวอร์ชันถัดไป
 
 ## ข้อห้าม ณ สถานะนี้
 
