@@ -27,3 +27,7 @@
 ## Interactive QA
 
 - [ ] พี่เจยืนยันตำแหน่งและการทำงานของปุ่มทั้งสอง
+- [x] Import fixture 25 records สำเร็จ — User QA passed 2026-07-19
+- [x] Pagination หน้าแรก 20 รายการ — User QA passed 2026-07-19
+- [x] Pagination หน้าที่สอง 5 รายการ — User QA passed 2026-07-19
+- [x] เปลี่ยนหน้าระหว่างหน้า 1/2 และ 2/2 — User QA passed 2026-07-19
