@@ -1,0 +1,40 @@
+# QA REPORT — quotation_v5_8_CI.html
+
+- วันที่: 2026-07-11
+- สถานะ: Development / Static QA passed
+- SHA-256: `95569fd519c615b54d6c1ba19d18dda6e8c773b70bf6a8511f9735f21768ac52`
+- Base: v5.7 CI
+
+## เพิ่มใน v5.8
+
+- ค้นหาจากเลข Quotation ลูกค้า และชื่อทริป
+- กรองปี สถานะ และรายการปักหมุด
+- เรียงตามวันที่แก้ไข วันที่สร้าง ลูกค้า เลข Quotation และวันเดินทาง
+- แบ่งหน้า 20 รายการ
+- สถานะ Draft, Sent, Confirmed และ Cancelled
+- ปักหมุดรายการสำคัญ
+- ฐานข้อมูลลูกค้าแยกจากใบเสนอราคา
+- Export/Import Backup แบบ JSON
+- Archive ตามปี
+- ย้ายข้อมูล v5.7 เข้ามา v5.8 อัตโนมัติครั้งแรก
+
+## Static QA — Passed
+
+- [x] JavaScript syntax
+- [x] Search, filters, sorting และ pagination functions
+- [x] Customer save/update/apply functions
+- [x] Backup export/import validation
+- [x] v5.7 migration path
+- [x] Multi-record Save/Load/Update/Delete ยังคงอยู่
+- [x] หมายเหตุ inline และหลายบรรทัดยังคงอยู่
+- [x] Checksum ของ v5.5, v5.6 และ v5.7 ไม่เปลี่ยน
+
+## Interactive QA — Pending
+
+- [ ] บันทึกอย่างน้อย 25 รายการและเปลี่ยนหน้า
+- [ ] ค้นหาและกรองหลายเงื่อนไข
+- [ ] เรียงข้อมูลทุกแบบ
+- [ ] บันทึกและเรียกใช้ข้อมูลลูกค้า
+- [ ] Export แล้ว Import Backup
+- [ ] ตรวจข้อมูล v5.7 หลัง migration
+- [ ] Print/Save PDF
