@@ -31,6 +31,8 @@
 
 ## Interactive QA — Pending
 
+Execution attempt: 2026-07-19 — Blocked by worker Browser environment; ดู `QA_EXECUTION_v5_8_CI_2026-07-19.md`
+
 - [ ] บันทึกอย่างน้อย 25 รายการและเปลี่ยนหน้า
 - [ ] ค้นหาและกรองหลายเงื่อนไข
 - [ ] เรียงข้อมูลทุกแบบ
