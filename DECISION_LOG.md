@@ -48,3 +48,10 @@
 - Development, RC1 และ Approved file ตรงกันแบบ byte-for-byte
 - Approved Master นี้เป็น baseline ของงาน Development ถัดไป
 - ห้ามแก้ทับ Approved file
+
+## 2026-07-19 — สร้าง Reusable AI Project Continuity System
+
+- แยก Core Operating Principles ที่ worker ห้ามเปลี่ยนเองออกจาก Project Context เฉพาะงาน
+- GitHub เป็นสมองกลางและ checkpoint เป็นส่วนหนึ่งของ Definition of Done
+- AI ตัวแรกของโครงการใหม่ต้องถาม Discovery Questions แล้วสร้าง Master Context ของโครงการนั้น
+- ระบบรองรับการเปลี่ยนห้อง เปลี่ยน AI หรือ token หมดโดยรับช่วงจาก Current State และ Checkpoint ล่าสุด
